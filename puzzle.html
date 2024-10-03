@@ -11,38 +11,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <title>Puzzle Gallery</title>
+    <style>
+        .gallery-container {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .puzzle-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .puzzle-img {
+            max-width: 280px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .puzzle-img:hover {
+            transform: scale(1.05);
+        }
+
+        .middle-image {
+            max-width: 350px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+    </style>
 </head>
 
 <body>
     <div id="stars"></div>
     <div id="stars2"></div>
 
-    <div class="container model">
-        <div class="row">
-            <h1>Puzzle Gallery</h1>
-            <p>Here are some of the completed puzzles from my collection. Enjoy these six amazing pieces!</p>
-            
-            <div class="col-md-4">
-                <img class="img-responsive puzzle-img" src="./resources/puzzle/puzzle1.jpg" alt="Puzzle 1">
-            </div>
-            <div class="col-md-4">
-                <img class="img-responsive puzzle-img" src="./resources/puzzle/puzzle2.jpg" alt="Puzzle 2">
-            </div>
-            <div class="col-md-4">
-                <img class="img-responsive puzzle-img" src="./resources/puzzle/puzzle3.jpg" alt="Puzzle 3">
-            </div>
-            <div class="col-md-4">
-                <img class="img-responsive puzzle-img" src="./resources/puzzle/puzzle4.jpg" alt="Puzzle 4">
-            </div>
-            <div class="col-md-4">
-                <img class="img-responsive puzzle-img" src="./resources/puzzle/puzzle5.jpg" alt="Puzzle 5">
-            </div>
-            <div class="col-md-4">
-                <img class="img-responsive puzzle-img" src="./resources/puzzle/puzzle6.jpg" alt="Puzzle 6">
-            </div>
+    <div class="container gallery-container">
+        <h1>Puzzle Gallery</h1>
+        <p>Here are some of the completed puzzles from my collection. The centerpiece is my favorite one!</p>
+
+        <div class="puzzle-wrapper">
+            <img class="puzzle-img" src="./resources/puzzle/puzzle1.jpeg" alt="Puzzle 1">
+            <img class="puzzle-img" src="./resources/puzzle/puzzle2.jpeg" alt="Puzzle 2">
+            <img class="middle-image" src="./resources/puzzle/puzzle3.jpeg" alt="Puzzle 3 - Main Puzzle">
+            <img class="puzzle-img" src="./resources/puzzle/puzzle4.jpeg" alt="Puzzle 4">
+            <img class="puzzle-img" src="./resources/puzzle/puzzle5.jpeg" alt="Puzzle 5">
+            <img class="puzzle-img" src="./resources/puzzle/puzzle6.jpeg" alt="Puzzle 6">
         </div>
     </div>
-
 </body>
 
 </html>

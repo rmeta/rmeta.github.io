@@ -1,75 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700|Dancing+Script' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Normalize.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Armita Tehranchi - Personal Introduction</title>
+    <meta property="og:title" content="Armita Tehranchi" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:image" content="./resources/img/profile.jpg" />
+    <meta property="og:url" content="https://armitatehranchi.info/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Armita Tehranchi</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Lato', sans-serif;
+            background: linear-gradient(to bottom, #fce4ec, #f8bbd0);
             color: #333;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
         }
         .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-        }
-        header {
             text-align: center;
-            padding: 50px 0;
+            padding: 40px;
         }
-        header h1 {
-            font-size: 2.5em;
-        }
-        .intro {
-            margin: 20px 0;
-            font-size: 1.2em;
-        }
-        .photos {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .photos img {
-            max-width: 45%;
-            border-radius: 10px;
+        .profile {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        footer {
-            text-align: center;
-            margin: 40px 0;
-            color: #666;
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3em;
+            color: #e91e63;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .link {
+            color: #d81b60;
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        .button-row a {
+            margin: 10px;
+            font-size: 1.5em;
+            color: #e91e63;
+            transition: color 0.3s;
+        }
+        .button-row a:hover {
+            color: #f06292;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <header>
-            <h1>Hi, I'm Armita Tehranchi</h1>
-            <p>Welcome to my personal webpage!</p>
-        </header>
-        
-        <section class="intro">
-            <p>
-                I am a full-time master's student in Sustainability at the University of British Columbia Okanagan in Kelowna, BC. I have a passion for research, particularly in sustainability and consumer behavior, and have worked on various research projects involving sustainable fashion, wildfire management, and more. I enjoy solving puzzles, playing the piano, and am currently working on econometrics and integer programming.
-            </p>
-            <p>
-                I'm also the president of the IGS students group and have presented my research at several conferences and companies like Lululemon. My journey involves studying abroad, and I deeply value my independence and the impact my research has on society.
-            </p>
-        </section>
+        <img class="profile" src="./resources/img/profile.jpg" alt="Photo of Armita Tehranchi" />
+        <h1>Armita Tehranchi</h1>
+        <p>
+            Hello! I'm Armita, a passionate full-time master's student in Sustainability at the University of British Columbia Okanagan, located in beautiful Kelowna, BC. My academic journey revolves around sustainability, particularly understanding and influencing consumer behavior toward sustainable fashion.
+        </p>
+        <p>
+            I have a strong interest in research and its social impact, working on projects in sustainability, wildfire management, and consumer behavior. I’ve presented my work at conferences and in collaboration with brands like Lululemon.
+        </p>
+        <p>
+            When I'm not deep into my studies, you can find me solving puzzles, playing piano, or enjoying my time as the president of the IGS students group at UBC. Feel free to explore more about me, or connect with me through any of the platforms below!
+        </p>
 
-        <section class="photos">
-            <img src="mypic.jpg" alt="Photo of Armita">
-        </section>
-
-        <footer>
-            <p>&copy; 2024 Armita Tehranchi. All rights reserved.</p>
-        </footer>
+        <div class="button-row">
+            <a class="contact-btn" href="mailto:armita.tehranchi@gmail.com">
+                <i class="fa fa-envelope"></i>
+            </a>
+            <a class="contact-btn" href="tel:+123456789">
+                <i class="fa fa-phone"></i>
+            </a>
+            <a class="contact-btn" target="_blank" href="https://www.linkedin.com/in/armita-tehranchi">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a class="contact-btn" target="_blank" href="https://github.com/armitatehranchi">
+                <i class="fa fa-github"></i>
+            </a>
+            <a class="contact-btn" target="_blank" href="http://twitter.com/armita_tehranchi">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </div>
     </div>
 </body>
+
 </html>

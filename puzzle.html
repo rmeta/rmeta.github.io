@@ -12,12 +12,6 @@
 
     <title>Puzzle Gallery</title>
     <style>
-        body {
-            font-family: 'Lato', sans-serif;
-            background: linear-gradient(to bottom, #fce4ec, #f8bbd0);
-            color: #333;
-        }
-
         .gallery-container {
             text-align: center;
             padding: 40px;
@@ -26,12 +20,14 @@
         .puzzle-row {
             display: flex;
             justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
             gap: 20px;
             margin-bottom: 20px;
         }
 
         .puzzle-img {
-            width: 200px;
+            max-width: 100%;
             height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -43,10 +39,15 @@
         }
 
         .middle-image {
-            width: 300px;
+            max-width: 100%;
             height: auto;
             border-radius: 10px;
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .middle-row {
+            text-align: center;
+            margin: 20px 0;
         }
     </style>
 </head>
@@ -57,7 +58,8 @@
 
     <div class="container gallery-container">
         <h1>Puzzle Gallery</h1>
-        <p>Here are some of the completed puzzles from my collection. The centerpiece is my favorite one!</p>
+        <p>Here are some of the completed puzzles from my collection.</p>
+
 
         <!-- First Row -->
         <div class="puzzle-row">

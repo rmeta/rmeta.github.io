@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="Normalize.css">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -14,13 +13,16 @@
     <style>
         body {
             font-family: 'Lato', sans-serif;
-            background: linear-gradient(to bottom, #fce4ec, #f8bbd0);
-            color: #fff;
+            background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+            color: #ffffff;
+            height: 100%;
+            overflow: hidden;
         }
 
         h1, p {
-            color: #fff;
+            color: #ffffff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: center;
         }
 
         .gallery-container {
@@ -55,6 +57,30 @@
 
         .carousel-indicators {
             bottom: -30px;
+        }
+
+        /* Star animation */
+        #stars, #stars2 {
+            width: 1px;
+            height: 1px;
+            background: transparent;
+            box-shadow: 397px 179px #FFF, 1178px 1109px #FFF, 756px 705px #FFF, 1283px 939px #FFF, 613px 1234px #FFF, 107px 596px #FFF;
+            animation: animStar 100s linear infinite;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        @keyframes animStar {
+            from {
+                transform: translateY(0px);
+            }
+            to {
+                transform: translateY(-2000px);
+            }
         }
     </style>
 </head>

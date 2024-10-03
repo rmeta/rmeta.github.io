@@ -8,64 +8,41 @@
     <link rel="stylesheet" href="Normalize.css">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <meta property="og:title" content="Armita's Puzzle Gallery" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="./resources/puzzle/puzzle1.jpeg" />
-    <meta property="og:url" content="https://armitatehranchi.info/puzzles.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Armita's Puzzle Gallery</title>
-    <style>
-        body {
-            font-family: 'Lato', sans-serif;
-            background: linear-gradient(to bottom, #fce4ec, #f8bbd0);
-            color: #333;
-        }
-
-        .container {
-            text-align: center;
-            padding: 40px;
-        }
-
-        h1 {
-            font-family: 'Lato', sans-serif;
-            font-size: 3em;
-            color: #e91e63;
-            margin-bottom: 20px;
-        }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .gallery img {
-            max-width: 300px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-    </style>
+    <title>Puzzle Gallery</title>
 </head>
 
 <body>
-    <div class="container">
-        <h1>My Favorite Puzzles</h1>
-        <div class="gallery">
-            <img src="./resources/puzzle/puzzle1.jpeg" alt="Puzzle 1">
-            <img src="./resources/puzzle/puzzle2.jpeg" alt="Puzzle 2">
-            <img src="./resources/puzzle/puzzle3.jpeg" alt="Puzzle 3">
-            <img src="./resources/puzzle/puzzle4.jpeg" alt="Puzzle 4">
-            <img src="./resources/puzzle/puzzle5.jpeg" alt="Puzzle 5">
-            <img src="./resources/puzzle/puzzle6.jpeg" alt="Puzzle 6">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+
+    <div class="container model">
+        <div class="row">
+            <h1>Puzzle Gallery</h1>
+            <p>Here are some of the completed puzzles from my collection. Enjoy these six amazing pieces!</p>
+            
+            <div class="col-md-4">
+                <img class="img-responsive puzzle-img" src="./resources/puzzle/puzzle1.jpg" alt="Puzzle 1">
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive puzzle-img" src="./resources/puzzle/puzzle2.jpg" alt="Puzzle 2">
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive puzzle-img" src="./resources/puzzle/puzzle3.jpg" alt="Puzzle 3">
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive puzzle-img" src="./resources/puzzle/puzzle4.jpg" alt="Puzzle 4">
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive puzzle-img" src="./resources/puzzle/puzzle5.jpg" alt="Puzzle 5">
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive puzzle-img" src="./resources/puzzle/puzzle6.jpg" alt="Puzzle 6">
+            </div>
         </div>
     </div>
+
 </body>
 
 </html>

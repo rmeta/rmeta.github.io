@@ -15,12 +15,12 @@
         body {
             font-family: 'Lato', sans-serif;
             background: linear-gradient(to bottom, #fce4ec, #f8bbd0);
-            color: #ffffff; /* Brighter text for better readability */
+            color: #fff;
         }
 
         h1, p {
-            color: #ffffff; /* Lighten text color */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for contrast */
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
 
         .gallery-container {
@@ -31,16 +31,22 @@
         .carousel-inner {
             width: 70%;
             margin: auto;
-            max-height: 500px; /* Setting maximum height to ensure images aren't too large */
+            max-height: 500px;
         }
 
         .carousel-inner img {
             max-width: 100%;
-            max-height: 500px; /* Ensuring the images fit within the container without being too big */
+            max-height: 500px;
             height: auto;
             border-radius: 10px;
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-            object-fit: contain; /* Ensure that the image fits within the bounds without distortion */
+            object-fit: contain;
+        }
+
+        /* Center the first image */
+        .carousel-inner .item.active img {
+            display: block;
+            margin: 0 auto;
         }
 
         .carousel-control {

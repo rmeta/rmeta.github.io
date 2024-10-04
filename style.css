@@ -233,6 +233,7 @@ p a:hover {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
     font-family: 'Lato', sans-serif;
     text-align: center;
+    overflow-y: auto; /* Allow scrolling */
 }
 
 /* Main Content Styling */
@@ -240,6 +241,8 @@ p a:hover {
     padding: 60px 15px;
     margin-left: 200px; /* Space for the sidebar */
     color: #e0e0e0;
+    background-color: #1b1b3a; /* Dark blue background */
+    min-height: 100vh; /* Ensure it covers the entire viewport */
 }
 
 /* Content Box Styling */
@@ -249,10 +252,7 @@ p a:hover {
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.about-me h2, .interests h2, .education h2, .honors-awards h2 {
-    color: #ffffff;
+    height: 100%; /* Fill the height of the container */
 }
 
 .download-cv-btn {
@@ -288,3 +288,27 @@ p a:hover {
     margin: 5px 0;
 }
 
+/* Ensure Equal Box Heights */
+.equal-boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equal-boxes > div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Remove white backgrounds and page overflow issues */
+body {
+    background-color: #1b1b3a;
+    color: #e0e0e0;
+    overflow-x: hidden;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}

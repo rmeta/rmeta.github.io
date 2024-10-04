@@ -155,19 +155,7 @@ p a:hover {
     -o-transform: translateY(0);
 }
 }
-/* General Page and Body Styling */
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: 'Lato', sans-serif;
-    background-color: #1b1b3a;
-    color: #e0e0e0;
-}
-
-/* Sidebar Styling */
+/* Sidebar Styles (unchanged) */
 .sidebar {
     position: fixed;
     left: 0;
@@ -175,123 +163,87 @@ html, body {
     width: 180px;
     height: 100%;
     background-color: #1b1b1b;
+    color: #e0e0e0;
     padding-top: 30px;
-    text-align: center;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-}
-
-.sidebar-profile-container {
-    margin-bottom: 20px;
-}
-
-.sidebar-profile-picture {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Footer Text Styling in Sidebar */
-.footer-text {
-    position: absolute;
-    bottom: 20px;
-    left: 10px;
-    right: 10px;
-    font-size: 10px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    overflow-y: auto; /* Allow scrolling */
 }
 
 /* Main Content Styling */
 .about-page {
+    padding: 60px 15px;
     margin-left: 200px; /* Space for the sidebar */
-    padding: 20px;
-    height: 100%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: #e0e0e0;
+    background-color: #1b1b3a; /* Dark blue background */
+    min-height: 100vh; /* Ensure it covers the entire viewport */
 }
 
 /* Content Box Styling */
 .content-box {
-    background-color: #1b1b3a;
+    background-color: #1b1b3a; /* Dark blue similar to the sidebar */
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 2px solid #2a2a5a;
-    height: 300px;
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 100%; /* Fill the height of the container */
 }
 
-/* Profile Picture Styling Above About Me Section */
-.profile-picture-box {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.main-content-profile-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 8px; /* Rounded corners */
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Grid Layout for Content Alignment */
-.equal-boxes {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns */
-    grid-gap: 20px; /* Space between grid items */
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.education,
-.field-of-interest {
-    width: 100%;
-    height: 300px;
-}
-
-.honors-awards {
-    grid-column: span 2; /* Make this take two columns */
-    width: 100%;
-    height: 300px;
-}
-
-/* Download CV Button Styling */
 .download-cv-btn {
-    background-color: #0066cc;
-    color: #ffffff;
+    margin-top: 20px;
+    background-color: #3b3b3b;
     border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .download-cv-btn:hover {
-    background-color: #005bb5;
+    background-color: #575757;
 }
 
-/* Text Styling for Uniformity */
-h2 {
-    margin-bottom: 15px;
+/* Interests and Education Section */
+.interests ul, .honors-awards ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-ul li {
+.interests ul li, .honors-awards ul li {
+    font-size: 16px;
     margin-bottom: 10px;
+}
+
+.education-item {
+    margin-bottom: 20px;
+}
+
+.education-item h3 {
+    font-size: 18px;
+}
+
+.education-item p {
+    margin: 5px 0;
+}
+
+/* Ensure Equal Box Heights */
+.equal-boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equal-boxes > div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Remove white backgrounds and page overflow issues */
+body {
+    background-color: #1b1b3a;
+    color: #e0e0e0;
+    overflow-x: hidden;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }

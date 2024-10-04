@@ -14,9 +14,11 @@
 <body>
     <!-- Sidebar Navigation -->
     <div class="sidebar">
-        <div class="profile-container">
-            <img class="profile-picture" src="./resources/img/profilee.jpeg" alt="Profile Picture">
-        </div>
+        <!-- Profile Picture Box Styling in the About Me Section -->
+    <div class="profile-picture-box">
+        <img src="./resources/img/profilee.jpeg" alt="Profile Picture" class="profile-picture-main">
+    </div>
+
         <nav>
             <ul class="nav nav-pills nav-stacked">
                 <li><a href="#home">Home</a></li>
@@ -40,7 +42,7 @@
             <!-- About Me Section -->
             <div class="col-md-4 about-me content-box">
                 <div class="profile-picture-box">
-                    <img src="./resources/img/profilee.jpeg" alt="Profile Picture" class="profile-picture-main square">
+                    <img src="./resources/img/profilee.jpeg" alt="Profile Picture" class="profile-picture-main">
                 </div>
                 <h2>About Me</h2>
                 <p>
@@ -65,12 +67,10 @@
                     <p><strong>B.Sc. in Engineering Science (Computer sub-field)</strong></p>
                     <p>Sep 2019 – Aug 2023</p>
                 </div>
-            </div>
 
-            <!-- Field of Interest Section -->
-            <div class="col-md-4 field-of-interest content-box">
+                <!-- Field of Interest Section -->
                 <h2>Field of Interest</h2>
-                <ul>
+                <ul class="field-of-interest">
                     <li>Operational Research</li>
                     <li>Machine Learning</li>
                     <li>Sustainable Consumer Behavior</li>

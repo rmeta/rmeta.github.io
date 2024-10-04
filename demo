@@ -1,0 +1,65 @@
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVVG5F5" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Armita Tehranchi</a>
+            </div>
+
+            <!-- Collect the nav links -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div id="stars"></div>
+    <div id="stars2"></div>
+
+    <div class="container model">
+        <div class="row">
+            <img class="profile" src="./resources/img/profilee.jpeg" />
+
+            <h1>Armita Tehranchi</h1>
+            <p>
+                I’m Armita Tehranchi, a master's student in Operational Analytics under the supervision of 
+                <a class="link" target="_blank" href="https://scholar.google.com/citations?hl=en&user=-f4bTPsAAAAJ&sortby=pubdate&scilu=&scisig=AMD79ooAAAAAYwMNB9_5IG5Wunp1NpJj_RHOXolQTqdB&gmla=AJsN-F5IyoAu-cEcMzjBKIy35YZ8byIAS5QFkDbkHrMcDbEkzYAN0GCplhOQ3-12E3ilLDnh-EM62u9KdV6ddGY6C256w_Vpct2proFnsjMdrQfZ0Q2XNoQ&sciund=5511191694218781419">Dr. Amir Ardestani</a> at the 
+                <a class="link" target="_blank" href="https://www.ubc.ca/">University of British Columbia</a>. I received my B.Sc. with second-class honors from the University of Tehran, majoring in Engineering Science with a sub-field in Computer Engineering. As an INTP, I enjoy discovering new possibilities and engaging in creative problem-solving scenarios.
+                <br><br>
+                My research spans consumer behavior, machine learning applications, collaborative consumption, and remanufacturing. I’ve had the opportunity to collaborate with <a class="link" target="_blank" href="https://shop.lululemon.com/">Lululemon</a> on a project exploring the perception of younger generations regarding sustainable fashion through machine learning approaches. In addition to my academic pursuits, I enjoy solving <a class="link" target="_blank" href="https://rmeta.github.io/puzzle">puzzles</a>, <a class="link" target="_blank" href="https://youtu.be/2c34LzHuICo">playing the piano</a>, and contributing to student communities through leadership roles. Feel free to find more about my background in <a class="link" target="_blank" href="./resources/CV.pdf">my CV</a>.
+            </p>
+
+            <div class="button-row">
+                <a class="contact-btn" href="mailto:armitat@mail.ubc.ca">
+                    <svg class="icon" viewBox="0 0 24 24"
+                        style="display: inline-block;  fill: currentcolor;  user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;">
+                        <path
+                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z">
+                        </path>
+                    </svg>
+                </a>
+                <!-- Remaining contact buttons here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>

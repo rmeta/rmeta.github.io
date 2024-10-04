@@ -6,92 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="style.css" rel="stylesheet">
-    <title>About - Armita Tehranchi</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" type="text/css">
+    <title>About - Armita Tehranchi</title>
 </head>
 
 <body>
-    <div class="container about-page">
-        <h1>About Armita Tehranchi</h1>
+    <!-- Background Stars (Keep as existing) -->
+    <div id="stars"></div>
+    <div id="stars2"></div>
 
-        <!-- Education Section -->
-        <section class="education">
-            <h2>Education</h2>
-            <div class="education-item">
-                <img src="https://upload.wikimedia.org/wikipedia/en/4/42/UBC_logo.svg" alt="UBC Logo" class="university-logo">
-                <div>
-                    <h3>University of British Columbia (UBC), Kelowna, Canada</h3>
-                    <p><strong>M.Sc. in Operational Analytics</strong></p>
-                    <p><strong>GPA:</strong> 92.3/100</p>
-                    <p><strong>Thesis:</strong> Analytical techniques for understanding and enhancing consumer sustainability behaviour</p>
-                    <p><strong>Adviser:</strong> Amir Ardestani-Jaafari</p>
-                    <p><strong>Duration:</strong> Sep 2023 – Present</p>
-                </div>
-            </div>
-            <div class="education-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/University_of_Tehran_logo.svg" alt="UT Logo" class="university-logo">
-                <div>
-                    <h3>University of Tehran (UT), Tehran, Iran</h3>
-                    <p><strong>B.Sc. in Engineering Science (Computer sub-field)</strong></p>
-                    <p><strong>GPA:</strong> 90.3/100</p>
-                    <p><strong>Rank:</strong> 2nd/28</p>
-                    <p><strong>Thesis:</strong> Dynamic Analysis of Information Propagation in Online Social Network: SEIR Model</p>
-                    <p><strong>Adviser:</strong> Ehsan Maani-Miandoab</p>
-                    <p><strong>Duration:</strong> Sep 2019 – Aug 2023</p>
-                </div>
-            </div>
-            <div class="education-item">
-                <h3>National Organization for Development of Exceptional Talents, Mashad, Iran</h3>
-                <p><strong>High School, Mathematics and Physics</strong></p>
-                <p><strong>GPA:</strong> 98.65/100</p>
-                <p><strong>Duration:</strong> Sep 2016 – Aug 2019</p>
-            </div>
+    <div class="container about-page">
+        <!-- About Me Section -->
+        <section class="about-me">
+            <h1>About Me</h1>
+            <p>
+                I’m Armita Tehranchi, a master's student in Operational Analytics under the supervision of 
+                Dr. Amir Ardestani at the University of British Columbia. My research interests include consumer behavior, machine learning applications, collaborative consumption, and remanufacturing. 
+                I’m passionate about exploring sustainable fashion and analyzing how consumer behavior impacts sustainability.
+            </p>
+            <a href="./resources/CV.pdf" class="btn btn-primary download-cv-btn">
+                <i class="fa fa-download"></i> Download CV
+            </a>
         </section>
 
-        <!-- Honors and Awards Section -->
+        <!-- Interests and Education Section -->
+        <div class="row interests-education-section">
+            <div class="col-md-6 interests">
+                <h2>Interests</h2>
+                <ul>
+                    <li>Operational Research</li>
+                    <li>Machine Learning</li>
+                    <li>Sustainable Consumer Behavior</li>
+                    <li>Collaborative Consumption</li>
+                    <li>Remanufacturing</li>
+                </ul>
+            </div>
+            <div class="col-md-6 education">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3><i class="fa fa-graduation-cap"></i> University of British Columbia (UBC)</h3>
+                    <p><strong>M.Sc. in Operational Analytics</strong></p>
+                    <p>Sep 2023 – Present</p>
+                </div>
+                <div class="education-item">
+                    <h3><i class="fa fa-graduation-cap"></i> University of Tehran (UT)</h3>
+                    <p><strong>B.Sc. in Engineering Science (Computer sub-field)</strong></p>
+                    <p>Sep 2019 – Aug 2023</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Honors & Awards Section -->
         <section class="honors-awards">
             <h2>Honors and Awards</h2>
             <ul>
                 <li>The OR Diploma awarded by the Canadian Operational Research Society (CORS), 2024</li>
                 <li>Research Team Visit (1,000 CAD), Lululemon, 2024</li>
-                <li>Graduate Student Funding to Attend CORS 2024 (300 CAD), CORS, 2024</li>
-                <li>Conference Presentation (1,000 CAD), UBC, 2024</li>
                 <li>Fully funded graduate student in UBC (66,000 CAD), UBC, 2023 and 2024</li>
-                <li>IGS Master’s Entrance Award (10,000 CAD), UBC, 2023 and 2024</li>
-                <li>Global arrival scholarship (2800 CAD), Homa Scholarship, 2023</li>
-                <li>Direct MBA Admission with Full Scholarship, Sharif University of Technology (SUT), 2023</li>
-                <li>2nd place among Engineering Science bachelor’s students, UT, 2023</li>
-                <li>Ranked 3rd among undergraduate student Projects, UT, 2023</li>
-                <li>Ranked 2nd among undergraduate student Projects, UT, 2022</li>
-                <li>Ranked 4th among more than 100 participants, National Festival of Tanin Piano, 2018</li>
-            </ul>
-        </section>
-
-        <!-- Teaching Experience Section -->
-        <section class="teaching-experience">
-            <h2>Teaching Experience</h2>
-            <h3>University of British Columbia (UBC)</h3>
-            <ul>
-                <li>Introduction to Marketing - Workshop Instructor (Winter 2024)</li>
-                <li>Operations Management - Workshop Instructor (Fall 2024)</li>
-                <li>UBC Okanagan Global Summer Program - Workshop Instructor (Summer 2024)</li>
-                <li>Marketing Strategy - Course Support (Winter 2024)</li>
-                <li>Operations Management (Online) - Workshop Instructor (Fall 2023)</li>
-            </ul>
-
-            <h3>University of Tehran (UT)</h3>
-            <ul>
-                <li>Linear Algebra - Workshop Instructor (Spring 2023)</li>
-                <li>Fundamentals of Dynamical Systems - Final Project Instructor (Spring 2023)</li>
-                <li>Discrete Mathematics - Course Support (Fall 2022)</li>
-                <li>Physics 3 - Course Support (Fall 2022)</li>
-                <li>Fundamentals of Electrical Engineering - Course Support (Fall 2022)</li>
-                <li>Professional English - Course Support (Fall 2022)</li>
-                <li>Linear Algebra - Course Support (Spring 2022)</li>
             </ul>
         </section>
     </div>
 
+    <!-- External Scripts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>

@@ -155,7 +155,6 @@ p a:hover {
     -o-transform: translateY(0);
 }
 }
-
 /* Sidebar Styles */
 .sidebar {
     position: fixed;
@@ -203,6 +202,10 @@ p a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: 2px solid #2a2a5a; /* Lighter blue border */
     height: 320px; /* Set a fixed height to make all boxes uniform */
+    max-width: 400px; /* Set width to match other boxes */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* Profile Picture Above Introduction */
@@ -224,14 +227,14 @@ p a:hover {
     flex-wrap: wrap;
     gap: 20px; /* Add spacing between boxes */
     align-items: stretch;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .equal-boxes > div {
     display: flex;
     flex-direction: column;
     flex-grow: 1; /* Make all sections have the same width */
-    max-width: 30%; /* Limit each box width to fit all three boxes in the row */
+    max-width: 48%; /* Limit each box width to align vertically with enough spacing */
 }
 
 /* Footer Text Styling */

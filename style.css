@@ -161,69 +161,6 @@ p a:hover {
     position: fixed;
     left: 0;
     top: 0;
-    width: 180px; /* Made narrower to fit with your text */
-    height: 100%;
-    background-color: #1b1b1b; /* A dark grey color, similar to the background in the image */
-    color: #e0e0e0; /* Light grey color for better contrast */
-    padding-top: 30px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-}
-
-.profile-container {
-    margin-bottom: 20px;
-}
-
-.profile-picture {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-}
-
-.sidebar nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-}
-
-.sidebar nav ul li {
-    padding: 10px 15px;
-    font-size: 16px; /* Reduced font size to fit better */
-}
-
-.sidebar nav ul li a {
-    color: #e0e0e0; /* Light grey text color to match the theme */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.sidebar nav ul li a:hover {
-    color: #c0c0c0; /* Slightly lighter grey for hover effect */
-    background-color: #333; /* Darker grey background on hover */
-    padding-left: 20px; /* Add a bit of indentation when hovered */
-    transition: 0.3s;
-}
-
-.footer-text {
-    position: absolute;
-    bottom: 20px;
-    left: 10px;
-    right: 10px;
-    font-size: 12px;
-    color: #999;
-    text-align: center;
-}
-
-.footer-text p {
-    margin: 0;
-}
-/* Sidebar Styles (unchanged) */
-.sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
     width: 180px;
     height: 100%;
     background-color: #1b1b1b;
@@ -233,6 +170,16 @@ p a:hover {
     font-family: 'Lato', sans-serif;
     text-align: center;
     overflow-y: auto; /* Allow scrolling */
+}
+
+.profile-container {
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 100px; /* Reduce sidebar profile picture size */
+    height: auto; 
+    border-radius: 50%;
 }
 
 /* Main Content Styling */
@@ -251,58 +198,23 @@ p a:hover {
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    height: 100%; /* Fill the height of the container */
     border: 2px solid #2a2a5a; /* Lighter blue border */
 }
 
-.download-cv-btn {
-    margin-top: 20px;
-    background-color: #3b3b3b;
-    border: none;
-}
-
-.download-cv-btn:hover {
-    background-color: #575757;
-}
-
-/* Profile Picture Box Styling */
+/* Profile Picture Above Introduction */
 .profile-picture-box {
     text-align: center;
     margin-bottom: 20px;
 }
 
 .profile-picture-main {
-    width: 200px; /* Reduced size */
-    height: auto; /* Keep aspect ratio */
-    border-radius: 50%;
+    width: 200px;
+    height: 200px; /* Set to a fixed height to make it square */
+    border-radius: 10%; /* Reduced rounding to make it more of a square */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-/* Interests and Education Section */
-.field-of-interest {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.field-of-interest li, .honors-awards ul li {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.education-item {
-    margin-bottom: 20px;
-}
-
-.education-item h3 {
-    font-size: 18px;
-}
-
-.education-item p {
-    margin: 5px 0;
-}
-
-/* Ensure Equal Box Heights */
+/* Align Boxes Consistently */
 .equal-boxes {
     display: flex;
     flex-wrap: wrap;
@@ -327,3 +239,4 @@ html, body {
     margin: 0;
     padding: 0;
 }
+

@@ -219,7 +219,6 @@ p a:hover {
 .footer-text p {
     margin: 0;
 }
-
 /* Sidebar Styles (unchanged) */
 .sidebar {
     position: fixed;
@@ -253,6 +252,7 @@ p a:hover {
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     height: 100%; /* Fill the height of the container */
+    border: 2px solid #2a2a5a; /* Lighter blue border */
 }
 
 .download-cv-btn {
@@ -265,13 +265,26 @@ p a:hover {
     background-color: #575757;
 }
 
+/* Profile Picture Box Styling */
+.profile-picture-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture-main {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Interests and Education Section */
-.interests ul, .honors-awards ul {
+.field-of-interest {
     list-style-type: none;
     padding-left: 0;
 }
 
-.interests ul li, .honors-awards ul li {
+.field-of-interest li, .honors-awards ul li {
     font-size: 16px;
     margin-bottom: 10px;
 }
@@ -297,6 +310,7 @@ p a:hover {
 .equal-boxes > div {
     display: flex;
     flex-direction: column;
+    flex-grow: 1; /* Make all sections have the same width */
 }
 
 /* Remove white backgrounds and page overflow issues */

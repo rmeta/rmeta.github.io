@@ -155,3 +155,42 @@ p a:hover {
     -o-transform: translateY(0);
 }
 }
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f8f9fa;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    display: block;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+/* Add padding to the rest of the page content so it doesn’t overlap with the sidebar */
+.container.model {
+    margin-left: 220px; /* Adjust based on sidebar width */
+}
+

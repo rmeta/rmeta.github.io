@@ -220,4 +220,71 @@ p a:hover {
     margin: 0;
 }
 
+/* Sidebar Styles (unchanged) */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 180px;
+    height: 100%;
+    background-color: #1b1b1b;
+    color: #e0e0e0;
+    padding-top: 30px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+/* Main Content Styling */
+.about-page {
+    padding: 60px 15px;
+    margin-left: 200px; /* Space for the sidebar */
+    color: #e0e0e0;
+}
+
+/* Content Box Styling */
+.content-box {
+    background-color: #1b1b3a; /* Dark blue similar to the sidebar */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-me h2, .interests h2, .education h2, .honors-awards h2 {
+    color: #ffffff;
+}
+
+.download-cv-btn {
+    margin-top: 20px;
+    background-color: #3b3b3b;
+    border: none;
+}
+
+.download-cv-btn:hover {
+    background-color: #575757;
+}
+
+/* Interests and Education Section */
+.interests ul, .honors-awards ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.interests ul li, .honors-awards ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.education-item {
+    margin-bottom: 20px;
+}
+
+.education-item h3 {
+    font-size: 18px;
+}
+
+.education-item p {
+    margin: 5px 0;
+}
 

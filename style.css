@@ -155,15 +155,15 @@ p a:hover {
     -o-transform: translateY(0);
 }
 }
-/* General Styling for Full Viewport */
+/* General Page and Body Styling */
 html, body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevent page scrolling */
+    overflow: hidden;
     font-family: 'Lato', sans-serif;
-    background-color: #1b1b3a; /* Dark blue background to match your preferred style */
+    background-color: #1b1b3a;
     color: #e0e0e0;
 }
 
@@ -178,7 +178,7 @@ html, body {
     padding-top: 30px;
     text-align: center;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-    overflow: hidden; /* Remove scrolling */
+    overflow: hidden;
 }
 
 .sidebar-profile-container {
@@ -205,36 +205,30 @@ html, body {
 /* Main Content Styling */
 .about-page {
     margin-left: 200px; /* Space for the sidebar */
-    padding: 20px 40px;
-    height: calc(100% - 40px); /* Adjust height to account for padding */
+    padding: 20px;
+    height: 100%;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Content Box Styling for Uniformity */
+/* Content Box Styling */
 .content-box {
-    background-color: #1b1b3a; /* Dark blue background */
+    background-color: #1b1b3a;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 2px solid #2a2a5a; /* Light blue border */
-    height: 380px; /* Ensure all boxes are equal in height */
-    width: 450px; /* Ensure all boxes have the same width */
-    box-sizing: border-box;
-    flex-shrink: 0; /* Prevent box resizing */
-}
-
-/* Align Boxes Consistently */
-.about-page > .content-box {
+    border: 2px solid #2a2a5a;
+    height: 300px;
+    width: 350px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-/* Profile Picture Above Introduction */
+/* Profile Picture Styling Above About Me Section */
 .profile-picture-box {
     text-align: center;
     margin-bottom: 15px;
@@ -243,27 +237,30 @@ html, body {
 .main-content-profile-picture {
     width: 150px;
     height: 150px;
-    border-radius: 10%; /* Subtle rounded corners */
+    border-radius: 8px; /* Rounded corners */
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Ensure All Boxes Are of the Same Height */
+/* Grid Layout for Content Alignment */
 .equal-boxes {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    align-items: start;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-gap: 20px; /* Space between grid items */
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.field-of-interest, .education {
-    height: 380px;
+.education,
+.field-of-interest {
+    width: 100%;
+    height: 300px;
 }
 
 .honors-awards {
-    grid-column: span 2; /* Make the Honors and Awards section span across two columns */
-    height: 380px;
-    width: calc(100% - 20px); /* Full width with consistent spacing */
+    grid-column: span 2; /* Make this take two columns */
+    width: 100%;
+    height: 300px;
 }
 
 /* Download CV Button Styling */
@@ -298,3 +295,4 @@ ul {
 ul li {
     margin-bottom: 10px;
 }
+

@@ -272,11 +272,12 @@ p a:hover {
 }
 
 .profile-picture-main {
-    width: 120px;
-    height: 120px;
+    width: 200px; /* Reduced size */
+    height: auto; /* Keep aspect ratio */
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 
 /* Interests and Education Section */
 .field-of-interest {

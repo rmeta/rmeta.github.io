@@ -172,14 +172,14 @@ p a:hover {
     overflow-y: hidden; /* Remove scrolling */
 }
 
-.profile-container {
+.sidebar-profile-container {
     margin-bottom: 20px;
 }
 
-.profile-picture {
-    width: 80px; /* Reduce sidebar profile picture size */
-    height: 80px; /* Set to match the width */
-    border-radius: 50%; /* Make it circular */
+.sidebar-profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Small circular profile picture in sidebar */
     object-fit: cover;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -211,10 +211,10 @@ p a:hover {
     margin-bottom: 15px;
 }
 
-.profile-picture-main {
+.main-content-profile-picture {
     width: 150px;
-    height: 150px;
-    border-radius: 10%; /* Reduced rounding for a subtle square style */
+    height: 150px; /* Keep as square */
+    border-radius: 10%; /* Subtle rounded square for uniqueness */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 

@@ -24,7 +24,7 @@
             margin-bottom: 20px;
         }
 
-        /* Flexbox container to align all content boxes with equal height */
+        /* Flexbox container to align all content boxes */
         .equal-boxes {
             display: flex;
             gap: 20px; /* Adds consistent spacing between boxes */
@@ -56,12 +56,7 @@
             height: 100%;
         }
 
-        /* Ensure all boxes have equal height */
-        .equal-height {
-            height: 100%;
-        }
-
-        /* Adjust layout to have About Me and the rest side by side */
+        /* Layout styles */
         .col-left {
             flex: 1 1 30%; /* About Me section takes up 30% */
             max-width: 30%;
@@ -72,12 +67,11 @@
             max-width: 70%;
             display: flex;
             flex-wrap: wrap;
-            gap: 20px; /* Adds space between Education, Honors & Awards, and Research Interests */
+            gap: 20px;
         }
 
-        .col-half {
-            flex: 1 1 45%;
-            max-width: 45%;
+        .col-full {
+            flex: 1 1 100%;
         }
     </style>
 </head>
@@ -124,10 +118,10 @@
                 </a>
             </div>
 
-            <!-- Right Side Section: Education, Honors, and Research Interests -->
+            <!-- Right Section: Education, Honors, and Research Interests -->
             <div class="col-right">
                 <!-- Education Section -->
-                <div class="col-half content-box">
+                <div class="col-full content-box">
                     <h2>Education</h2>
                     <div class="education-item">
                         <h3><i class="fa fa-graduation-cap"></i> University of British Columbia (UBC)</h3>
@@ -142,7 +136,7 @@
                 </div>
 
                 <!-- Honors and Awards Section -->
-                <div class="col-half content-box">
+                <div class="col-full content-box">
                     <h2>Honors and Awards</h2>
                     <ul>
                         <li>The OR Diploma awarded by the Canadian Operational Research Society (CORS), 2024</li>
@@ -159,7 +153,7 @@
                 </div>
 
                 <!-- Research Interests Section -->
-                <div class="col-half content-box">
+                <div class="col-full content-box">
                     <h2>Research Interests</h2>
                     <ul>
                         <li>Applied Machine Learning</li>

@@ -83,9 +83,9 @@
         }
 
         .profile-picture {
-            width: 100px;
+            width: 150px;
             height: 100px;
-            border-radius: 50%;
+            border-radius: 10px;
             object-fit: cover;
             margin: 20px auto;
             display: block;
@@ -116,7 +116,7 @@
 
         .about-picture img {
             width: 100%;
-            max-width: 300px;
+            max-width: 100%;
             height: auto;
             border-radius: 10px;
         }
@@ -157,6 +157,7 @@
     <!-- Sidebar Navigation -->
     <div class="sidebar">
         <div class="profile-container">
+            <!-- Profile Picture (Rectangular Aspect) -->
             <img class="profile-picture" src="https://rmeta.github.io/resources/img/profilee.jpeg" alt="Profile Picture">
         </div>
         <nav>
@@ -181,7 +182,8 @@
         <!-- About Me Section -->
         <div class="content-box">
             <div class="about-picture">
-                <img src="https://rmeta.github.io/resources/img/profile.jpeg" alt="About Me Picture" class="img-responsive img-thumbnail">
+                <!-- Use a rectangular picture (as large as the container box) -->
+                <img src="https://rmeta.github.io/resources/img/profile_large.jpg" alt="About Me Picture" class="img-responsive img-thumbnail">
             </div>
             <h2>About Me</h2>
             <p>

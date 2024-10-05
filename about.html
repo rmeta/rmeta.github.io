@@ -30,9 +30,10 @@
             width: 2px;
             height: 2px;
             background: transparent;
-            box-shadow: 2000px 179px #FFF, 1500px 1109px #FFF, 1256px 705px #FFF, 800px 939px #FFF, 1300px 1234px #FFF, 
-                        1500px 596px #FFF, 600px 1600px #FFF, 1200px 2000px #FFF, 1900px 1500px #FFF, 1600px 1200px #FFF,
-                        1700px 800px #FFF, 500px 600px #FFF, 1800px 100px #FFF, 1600px 1700px #FFF, 900px 1200px #FFF;
+            box-shadow: 8000px 700px #FFF, 6000px 4436px #FFF, 5024px 2820px #FFF, 3200px 3756px #FFF, 
+                        5200px 4936px #FFF, 6000px 2384px #FFF, 2400px 6400px #FFF, 4800px 8000px #FFF, 
+                        7600px 6000px #FFF, 6400px 4800px #FFF, 6800px 3200px #FFF, 2000px 2400px #FFF,
+                        7200px 400px #FFF, 6400px 6800px #FFF, 3600px 4800px #FFF;
             animation: animStar 100s linear infinite;
             position: absolute;
             top: 0;
@@ -122,6 +123,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
         }
 
         .content-box {
@@ -130,8 +132,8 @@
             padding: 20px;
             margin-bottom: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center; /* Center the content inside the box */
-            max-width: 800px; /* Limit the width of the content box */
+            text-align: center;
+            max-width: 800px;
         }
 
         .download-cv-btn {
@@ -151,9 +153,21 @@
 
         .about-picture img {
             width: 100%;
-            max-width: 400px; /* Limit the image size */
+            max-width: 300px;
             height: auto;
-            border-radius: 10px;
+        }
+
+        /* Increase Font Size for About Me and Education */
+        h2 {
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-top: 0;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -185,10 +199,6 @@
     <div class="about-page">
         <!-- About Me Section -->
         <div class="content-box">
-            <div class="about-picture">
-                <!-- Use a rectangular picture -->
-                <img src="https://rmeta.github.io/resources/img/conference.jpeg" alt="About Me Picture" class="img-responsive img-thumbnail">
-            </div>
             <h2>About Me</h2>
             <p>
                 I'm Armita Tehranchi, a master's student in Operational Analytics under the supervision of Dr. Amir Ardestani at the University of British Columbia. I’m passionate about exploring sustainable fashion and analyzing how consumer behavior impacts sustainability.
@@ -196,6 +206,42 @@
             <a href="./resources/CV.pdf" class="btn btn-primary download-cv-btn">
                 <i class="fa fa-download"></i> Download CV
             </a>
+        </div>
+
+        <!-- About Picture Section -->
+        <div class="about-picture">
+            <img src="https://rmeta.github.io/resources/img/conference.jpeg" alt="About Me Picture">
+        </div>
+
+        <!-- Education Section -->
+        <div class="content-box">
+            <div class="section-title">Education</div>
+            <ul>
+                <li>
+                    <strong>Master of Science in Sustainability</strong><br>
+                    University of British Columbia Okanagan, Kelowna, BC<br>
+                    Expected Graduation: 2025
+                </li>
+                <li>
+                    <strong>Bachelor of Science in Environmental Studies</strong><br>
+                    University of Tehran, Tehran, Iran<br>
+                    Graduated: 2022
+                </li>
+            </ul>
+        </div>
+
+        <!-- Honors & Awards Section -->
+        <div class="content-box">
+            <h2>Honors and Awards</h2>
+            <ul>
+                <li>The OR Diploma awarded by the Canadian Operational Research Society (CORS), 2024</li>
+                <li>Research Team Visit (1,000 CAD), Lululemon, 2024</li>
+                <li>Graduate Student Funding to Attend CORS 2024 (300 CAD), CORS, 2024</li>
+                <li>Conference Presentation (1,000 CAD), UBC, 2024</li>
+                <li>Fully funded graduate student in UBC (66,000 CAD), UBC, 2023 and 2024</li>
+                <li>IGS Master’s Entrance Award (10,000 CAD), UBC, 2023 and 2024</li>
+                <li>IGS Travel Award (500 CAD), UBC, 2023</li>
+            </ul>
         </div>
     </div>
 

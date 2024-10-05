@@ -1,31 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armita Tehranchi - Resume</title>
     <link rel="stylesheet" href="https://raw.githubusercontent.com/rmeta/rmeta.github.io/main/style.css">
 </head>
-<body>
-    <div class="model">
-        <h1>Armita Tehranchi</h1>
-        <p>Email: armitat@mail.ubc.ca | LinkedIn | GitHub</p>
-        <h2>Education</h2>
-        <p>M.Sc. in Operational Analytics, University of British Columbia (UBC), Canada (2023 – Present)</p>
-        <p>B.Sc. in Engineering Science, University of Tehran, Iran (2019 – 2023)</p>
-        
-        <h2>Research Interests</h2>
-        <p>Applied Machine Learning, Empirical Research, Game Theory</p>
-        
-        <h2>Honors & Awards</h2>
-        <ul>
-            <li>The OR Diploma by CORS, 2024</li>
-            <li>Fully funded graduate student in UBC (66,000 CAD), 2023 and 2024</li>
-        </ul>
 
-        <h2>Skills</h2>
-        <p>Programming: Python, Matlab, C++, R</p>
-        <p>Frameworks: NumPy, Pandas, SKlearn, TensorFlow, etc.</p>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header-box">
+            <img src="your-image-url.jpg" alt="Armita Tehranchi" class="profile-img">
+            <div class="header-text">
+                <h1>Armita Tehranchi</h1>
+                <p>Email: <a href="mailto:armitat@mail.ubc.ca">armitat@mail.ubc.ca</a> | Phone: +1-250-899-2876</p>
+                <p>LinkedIn | GitHub</p>
+            </div>
+        </header>
+
+        <!-- About Me Section -->
+        <section class="about-box">
+            <h2>About Me</h2>
+            <p>Highly driven M.Sc. student in Operational Analytics with a focus on sustainability and consumer behavior. Strong foundation in machine learning and operations research, aiming to make an impact through data-driven insights and innovative solutions.</p>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education-box">
+            <h2>Education</h2>
+            <div class="education-entry">
+                <h3>University of British Columbia (UBC), Kelowna, Canada</h3>
+                <p>M.Sc. in Operational Analytics (2023 – Present)</p>
+                <p><strong>GPA:</strong> 92.3/100</p>
+                <p>Thesis: Analytical techniques for understanding and enhancing consumer sustainability behavior</p>
+                <p>Advisor: Amir Ardestani-Jaafari</p>
+            </div>
+            <div class="education-entry">
+                <h3>University of Tehran (UT), Tehran, Iran</h3>
+                <p>B.Sc. in Engineering Science (Computer sub-field) (2019 – 2023)</p>
+                <p><strong>GPA:</strong> 18.06/20 (90.3/100), Rank: 2nd/28</p>
+                <p>Thesis: Dynamic Analysis of Information Propagation in Online Social Network: SEIR Model</p>
+                <p>Advisor: Ehsan Maani-Miandoab</p>
+            </div>
+        </section>
+
+        <!-- Research Interests Section -->
+        <section class="research-box">
+            <h2>Research Interests</h2>
+            <ul>
+                <li>Applied Machine Learning</li>
+                <li>Empirical Research</li>
+                <li>Game Theory</li>
+            </ul>
+        </section>
+
+        <!-- Honors and Awards Section -->
+        <section class="awards-box">
+            <h2>Honors & Awards</h2>
+            <ul>
+                <li>The OR Diploma by the Canadian Operational Research Society (CORS), 2024</li>
+                <li>Travel grant (300 CAD) CORS, 2024</li>
+                <li>Fully funded graduate student in UBC (66,000 CAD), 2023 and 2024</li>
+                <li>Graduate Dean’s entrance scholarship (10,000 CAD) UBC, 2023 and 2024</li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-box">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <h3>Programming</h3>
+                    <p>Python, Matlab, C++, R</p>
+                </div>
+                <div class="skill">
+                    <h3>Frameworks</h3>
+                    <p>NumPy, Pandas, SKlearn, SciPy, TensorFlow, PyTorch, Keras</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section class="experience-box">
+            <h2>Research Experience</h2>
+            <div class="experience-entry">
+                <h3>Made to be Remade Initiatives</h3>
+                <p>Submitted to Production and Operations Management</p>
+                <p><strong>Guide:</strong> Amir & Shumail</p>
+                <p>Developed a steady-state model of a monopolistic firm to explore the trade-off between product reusability and innovation. Analyzed internal decision-making impacts on environmental outcomes and market dynamics.</p>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer-box">
+            <p>References available upon request.</p>
+            <p>&copy; 2024 Armita Tehranchi</p>
+        </footer>
     </div>
 </body>
+
 </html>

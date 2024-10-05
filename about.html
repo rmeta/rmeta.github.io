@@ -16,7 +16,7 @@
         .about-picture {
             text-align: center; /* Centers the image */
         }
-        
+
         .about-picture img {
             width: 100%;
             max-width: 100%; /* Same width as the container */
@@ -27,22 +27,23 @@
         /* Flexbox container to align all content boxes with equal height */
         .equal-boxes {
             display: flex;
-            flex-wrap: wrap;
             gap: 20px; /* Adds consistent spacing between boxes */
+            flex-wrap: wrap;
         }
 
         .content-box {
-            flex: 1;
             padding: 15px;
             margin-bottom: 0;
             background-color: #1a1a2e; /* Optional: Matches the style of the existing boxes */
             box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
         }
 
         /* Adjusting columns for three consistent columns without empty spaces */
-        .col-md-4 {
-            flex: 1 1 calc(33.333% - 20px); /* Three columns with 20px gap */
-            max-width: calc(33.333% - 20px);
+        .col-md-6 {
+            flex: 1 1 calc(50% - 20px); /* Two columns with a consistent gap */
+            max-width: calc(50% - 20px);
         }
 
         /* Profile picture in sidebar */
@@ -91,8 +92,8 @@
     <!-- Main Content -->
     <div class="container-fluid about-page">
         <div class="row equal-boxes">
-            <!-- About Me Section -->
-            <div class="col-md-4 content-box equal-height">
+            <!-- About Me Section (First Column) -->
+            <div class="col-md-6 content-box equal-height">
                 <!-- About Me Content -->
                 <div class="about-picture">
                     <img src="https://rmeta.github.io/resources/img/profile.jpeg" alt="About Me Picture" class="img-responsive img-thumbnail">
@@ -108,7 +109,7 @@
             </div>
 
             <!-- Education Section -->
-            <div class="col-md-4 content-box equal-height">
+            <div class="col-md-6 content-box equal-height">
                 <h2>Education</h2>
                 <div class="education-item">
                     <h3><i class="fa fa-graduation-cap"></i> University of British Columbia (UBC)</h3>
@@ -123,7 +124,7 @@
             </div>
 
             <!-- Honors & Awards Section -->
-            <div class="col-md-4 content-box equal-height">
+            <div class="col-md-6 content-box equal-height">
                 <h2>Honors and Awards</h2>
                 <ul>
                     <li>The OR Diploma awarded by the Canadian Operational Research Society (CORS), 2024</li>
@@ -136,6 +137,16 @@
                     <li>Direct MBA Admission with Full Scholarship, Sharif University of Technology (SUT), 2023</li>
                     <li>2nd Place Among Engineering Science Bachelor’s Students, University of Tehran, 2023</li>
                     <li>Ranked 3rd Among Undergraduate Student Projects, University of Tehran, 2023</li>
+                </ul>
+            </div>
+
+            <!-- Research Interests Section -->
+            <div class="col-md-6 content-box equal-height">
+                <h2>Research Interests</h2>
+                <ul>
+                    <li>Applied Machine Learning</li>
+                    <li>Empirical Research</li>
+                    <li>Game Theory</li>
                 </ul>
             </div>
         </div>

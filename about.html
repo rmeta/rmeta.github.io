@@ -20,20 +20,23 @@
         }
 
         body {
-            color: #e0e0e0;
+            color: #ffffff;
             font-family: 'Lato', sans-serif;
             overflow-x: hidden;
+            padding: 0;
+            margin: 0;
         }
 
-        /* Star animation */
+        /* Star Animation */
         #stars, #stars2 {
             width: 2px;
             height: 2px;
             background: transparent;
-            box-shadow: 8000px 700px #FFF, 6000px 4436px #FFF, 5024px 2820px #FFF, 3200px 3756px #FFF, 
-                        5200px 4936px #FFF, 6000px 2384px #FFF, 2400px 6400px #FFF, 4800px 8000px #FFF, 
-                        7600px 6000px #FFF, 6400px 4800px #FFF, 6800px 3200px #FFF, 2000px 2400px #FFF,
-                        7200px 400px #FFF, 6400px 6800px #FFF, 3600px 4800px #FFF;
+            box-shadow: 
+                8000px 700px #FFF, 1200px 900px #FFF, 5024px 2820px #FFF, 3200px 3756px #FFF,
+                5200px 4936px #FFF, 6000px 2384px #FFF, 2400px 6400px #FFF, 4800px 8000px #FFF,
+                7600px 6000px #FFF, 6400px 4800px #FFF, 800px 1400px #FFF, 6800px 3200px #FFF,
+                3000px 3600px #FFF, 1200px 200px #FFF, 800px 900px #FFF;
             animation: animStar 100s linear infinite;
             position: absolute;
             top: 0;
@@ -47,7 +50,6 @@
             from {
                 transform: translateY(0px);
             }
-
             to {
                 transform: translateY(-2000px);
             }
@@ -58,13 +60,12 @@
             position: fixed;
             left: 0;
             top: 0;
-            width: 180px;
+            width: 200px;
             height: 100%;
-            background-color: #1b1b1b;
+            background-color: #22263a;
             color: #e0e0e0;
             padding-top: 30px;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-            font-family: 'Lato', sans-serif;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
             text-align: center;
         }
 
@@ -73,8 +74,8 @@
         }
 
         .profile-picture {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             margin-bottom: 15px;
         }
@@ -82,7 +83,7 @@
         .sidebar nav ul {
             list-style-type: none;
             padding: 0;
-            text-align: left;
+            text-align: center;
         }
 
         .sidebar nav ul li {
@@ -98,7 +99,7 @@
 
         .sidebar nav ul li a:hover {
             color: #c0c0c0;
-            background-color: #333;
+            background-color: #444;
             padding-left: 20px;
             transition: 0.3s;
         }
@@ -116,48 +117,36 @@
         /* Main Content Styling */
         .about-page {
             padding: 60px 15px;
-            margin-left: 200px;
+            margin-left: 220px;
             color: #e0e0e0;
-            background-color: #1b1b3a;
             min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
         }
 
         .content-box {
-            background-color: #1b1b3a;
-            border-radius: 8px;
+            background-color: #2c2f47;
+            border-radius: 10px;
             padding: 20px;
             margin-bottom: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-me-box {
             text-align: center;
-            max-width: 800px;
+            padding: 40px;
         }
 
         .download-cv-btn {
             margin-top: 20px;
-            background-color: #3b3b3b;
+            background-color: #5a5a8a;
             border: none;
+            color: #ffffff;
         }
 
         .download-cv-btn:hover {
-            background-color: #575757;
+            background-color: #7777a3;
         }
 
-        .about-picture {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .about-picture img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-        }
-
-        /* Increase Font Size for About Me and Education */
+        /* About Me and Education Titles */
         h2 {
             font-size: 1.8em;
             font-weight: 700;
@@ -168,6 +157,20 @@
             font-size: 1.8em;
             font-weight: 700;
             margin-bottom: 10px;
+        }
+
+        /* Picture between sections */
+        .about-picture {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .about-picture img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -198,7 +201,7 @@
     <!-- Main Content -->
     <div class="about-page">
         <!-- About Me Section -->
-        <div class="content-box">
+        <div class="content-box about-me-box">
             <h2>About Me</h2>
             <p>
                 I'm Armita Tehranchi, a master's student in Operational Analytics under the supervision of Dr. Amir Ardestani at the University of British Columbia. I’m passionate about exploring sustainable fashion and analyzing how consumer behavior impacts sustainability.
@@ -210,7 +213,7 @@
 
         <!-- About Picture Section -->
         <div class="about-picture">
-            <img src="https://rmeta.github.io/resources/img/conference.jpeg" alt="About Me Picture">
+            <img src="https://rmeta.github.io/resources/img/conference.jpeg" alt="Conference Picture">
         </div>
 
         <!-- Education Section -->
@@ -240,6 +243,7 @@
                 <li>Conference Presentation (1,000 CAD), UBC, 2024</li>
                 <li>Fully funded graduate student in UBC (66,000 CAD), UBC, 2023 and 2024</li>
                 <li>IGS Master’s Entrance Award (10,000 CAD), UBC, 2023 and 2024</li>
+                <li>Global arrival scholarship (2800 CAD), Homa Scholarship, 2023</li>
                 <li>IGS Travel Award (500 CAD), UBC, 2023</li>
             </ul>
         </div>

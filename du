@@ -5,18 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armita Tehranchi - Resume</title>
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/rmeta/rmeta.github.io/main/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .header-text h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .about-box,
+        .education-box,
+        .research-box,
+        .awards-box,
+        .skills-box,
+        .experience-box {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-left: 5px solid #007BFF;
+            background: #fafafa;
+        }
+
+        h2 {
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+
+        .skills-grid {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            flex: 1 1 45%;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
         <!-- Header Section -->
         <header class="header-box">
-            <img src="your-image-url.jpg" alt="Armita Tehranchi" class="profile-img">
+            <img src="https://via.placeholder.com/150" alt="Armita Tehranchi" class="profile-img">
             <div class="header-text">
                 <h1>Armita Tehranchi</h1>
                 <p>Email: <a href="mailto:armitat@mail.ubc.ca">armitat@mail.ubc.ca</a> | Phone: +1-250-899-2876</p>
-                <p>LinkedIn | GitHub</p>
+                <p><a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
             </div>
         </header>
 
@@ -78,17 +151,6 @@
                     <h3>Frameworks</h3>
                     <p>NumPy, Pandas, SKlearn, SciPy, TensorFlow, PyTorch, Keras</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Professional Experience Section -->
-        <section class="experience-box">
-            <h2>Research Experience</h2>
-            <div class="experience-entry">
-                <h3>Made to be Remade Initiatives</h3>
-                <p>Submitted to Production and Operations Management</p>
-                <p><strong>Guide:</strong> Amir & Shumail</p>
-                <p>Developed a steady-state model of a monopolistic firm to explore the trade-off between product reusability and innovation. Analyzed internal decision-making impacts on environmental outcomes and market dynamics.</p>
             </div>
         </section>
 

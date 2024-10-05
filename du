@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armita Tehranchi - Resume</title>
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/rmeta/rmeta.github.io/main/style.css">
+</head>
+<body>
+    <div class="model">
+        <h1>Armita Tehranchi</h1>
+        <p>Email: armitat@mail.ubc.ca | LinkedIn | GitHub</p>
+        <h2>Education</h2>
+        <p>M.Sc. in Operational Analytics, University of British Columbia (UBC), Canada (2023 – Present)</p>
+        <p>B.Sc. in Engineering Science, University of Tehran, Iran (2019 – 2023)</p>
+        
+        <h2>Research Interests</h2>
+        <p>Applied Machine Learning, Empirical Research, Game Theory</p>
+        
+        <h2>Honors & Awards</h2>
+        <ul>
+            <li>The OR Diploma by CORS, 2024</li>
+            <li>Fully funded graduate student in UBC (66,000 CAD), 2023 and 2024</li>
+        </ul>
+
+        <h2>Skills</h2>
+        <p>Programming: Python, Matlab, C++, R</p>
+        <p>Frameworks: NumPy, Pandas, SKlearn, TensorFlow, etc.</p>
+    </div>
+</body>
+</html>

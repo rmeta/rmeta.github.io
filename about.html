@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="Normalize.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>About - Armita Tehranchi</title>
@@ -27,33 +28,8 @@
             margin: 0;
         }
 
-        /* Star Animation */
-        #stars, #stars2 {
-            width: 2px;
-            height: 2px;
-            background: transparent;
-            box-shadow: 
-                800px 700px #FFF, 1200px 900px #FFF, 5024px 2820px #FFF, 3200px 3756px #FFF,
-                5200px 4936px #FFF, 6000px 2384px #FFF, 2400px 6400px #FFF, 4800px 8000px #FFF,
-                7600px 6000px #FFF, 6400px 4800px #FFF, 800px 1400px #FFF, 6800px 3200px #FFF,
-                3000px 3600px #FFF, 1200px 200px #FFF, 800px 900px #FFF, 3000px 4500px #FFF, 500px 1200px #FFF;
-            animation: animStar 100s linear infinite;
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            margin: auto;
-        }
-
-        @keyframes animStar {
-            from {
-                transform: translateY(0px);
-            }
-            to {
-                transform: translateY(-2000px);
-            }
-        }
+          <div id="stars"></div>
+    <div id="stars2"></div>
 
         /* Sidebar Styles */
         .sidebar {

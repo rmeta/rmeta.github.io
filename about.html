@@ -24,7 +24,7 @@
             margin-bottom: 20px;
         }
 
-        /* Flexbox container to align all content boxes with equal height */
+        /* Flexbox container to align all content boxes */
         .equal-boxes {
             display: flex;
             gap: 20px; /* Adds consistent spacing between boxes */
@@ -37,7 +37,6 @@
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
         }
 
         /* Set the columns for equal height in the remaining two columns */
@@ -65,6 +64,8 @@
 
         /* Ensure all boxes have equal height */
         .equal-height {
+            display: flex;
+            flex-direction: column;
             height: 100%;
         }
     </style>
@@ -112,43 +113,47 @@
                 </a>
             </div>
 
-            <!-- Education, Honors & Awards, Research Interests in Two Columns -->
-            <div class="col-md-8 equal-height">
-                <div class="second-column content-box">
-                    <h2>Education</h2>
-                    <div class="education-item">
-                        <h3><i class="fa fa-graduation-cap"></i> University of British Columbia (UBC)</h3>
-                        <p><strong>M.Sc. in Operational Analytics</strong></p>
-                        <p>Sep 2023 – Present</p>
+            <!-- Right Section Split in Two Columns -->
+            <div class="col-md-8 content-box equal-height">
+                <div class="row">
+                    <!-- Education Section -->
+                    <div class="col-md-6 second-column">
+                        <h2>Education</h2>
+                        <div class="education-item">
+                            <h3><i class="fa fa-graduation-cap"></i> University of British Columbia (UBC)</h3>
+                            <p><strong>M.Sc. in Operational Analytics</strong></p>
+                            <p>Sep 2023 – Present</p>
+                        </div>
+                        <div class="education-item">
+                            <h3><i class="fa fa-graduation-cap"></i> University of Tehran (UT)</h3>
+                            <p><strong>B.Sc. in Engineering Science (Computer sub-field)</strong></p>
+                            <p>Sep 2019 – Aug 2023</p>
+                        </div>
                     </div>
-                    <div class="education-item">
-                        <h3><i class="fa fa-graduation-cap"></i> University of Tehran (UT)</h3>
-                        <p><strong>B.Sc. in Engineering Science (Computer sub-field)</strong></p>
-                        <p>Sep 2019 – Aug 2023</p>
+
+                    <!-- Honors and Awards & Research Interests Section -->
+                    <div class="col-md-6 third-column">
+                        <h2>Honors and Awards</h2>
+                        <ul>
+                            <li>The OR Diploma awarded by the Canadian Operational Research Society (CORS), 2024</li>
+                            <li>Research Team Visit (1,000 CAD), Lululemon, 2024</li>
+                            <li>Graduate Student Funding to Attend CORS 2024 (300 CAD), CORS, 2024</li>
+                            <li>Conference Presentation (1,000 CAD), UBC, 2024</li>
+                            <li>Fully funded graduate student in UBC (66,000 CAD), UBC, 2023 and 2024</li>
+                            <li>Graduate Dean’s Entrance Scholarship (10,000 CAD), UBC, 2023 and 2024</li>
+                            <li>Global arrival scholarship (2800 CAD), Homa Scholarship, 2023</li>
+                            <li>Direct MBA Admission with Full Scholarship, Sharif University of Technology (SUT), 2023</li>
+                            <li>2nd Place Among Engineering Science Bachelor’s Students, University of Tehran, 2023</li>
+                            <li>Ranked 3rd Among Undergraduate Student Projects, University of Tehran, 2023</li>
+                        </ul>
+
+                        <h2>Research Interests</h2>
+                        <ul>
+                            <li>Applied Machine Learning</li>
+                            <li>Empirical Research</li>
+                            <li>Game Theory</li>
+                        </ul>
                     </div>
-                </div>
-
-                <div class="third-column content-box">
-                    <h2>Honors and Awards</h2>
-                    <ul>
-                        <li>The OR Diploma awarded by the Canadian Operational Research Society (CORS), 2024</li>
-                        <li>Research Team Visit (1,000 CAD), Lululemon, 2024</li>
-                        <li>Graduate Student Funding to Attend CORS 2024 (300 CAD), CORS, 2024</li>
-                        <li>Conference Presentation (1,000 CAD), UBC, 2024</li>
-                        <li>Fully funded graduate student in UBC (66,000 CAD), UBC, 2023 and 2024</li>
-                        <li>Graduate Dean’s Entrance Scholarship (10,000 CAD), UBC, 2023 and 2024</li>
-                        <li>Global arrival scholarship (2800 CAD), Homa Scholarship, 2023</li>
-                        <li>Direct MBA Admission with Full Scholarship, Sharif University of Technology (SUT), 2023</li>
-                        <li>2nd Place Among Engineering Science Bachelor’s Students, University of Tehran, 2023</li>
-                        <li>Ranked 3rd Among Undergraduate Student Projects, University of Tehran, 2023</li>
-                    </ul>
-
-                    <h2>Research Interests</h2>
-                    <ul>
-                        <li>Applied Machine Learning</li>
-                        <li>Empirical Research</li>
-                        <li>Game Theory</li>
-                    </ul>
                 </div>
             </div>
         </div>

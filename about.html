@@ -12,22 +12,21 @@
 
     <!-- Embedded CSS for Adjustments -->
     <style>
-        /* Style for the Picture Above the About Me Box */
+        /* Style for the Picture in the About Me Box */
+        .about-picture {
+            text-align: center; /* Centers the image */
+        }
+        
         .about-picture img {
             width: 100%;
-            max-width: 250px; /* Adjust as necessary */
+            max-width: 100%; /* Same width as the container */
             height: auto;
             margin-bottom: 20px;
         }
 
-        /* Research Interests Section Styling */
-        .research-interests {
-            margin-top: 20px; /* Adds some spacing between the sections */
-        }
-
         /* Reduce margin between content boxes */
         .content-box {
-            margin-bottom: 15px; /* Controls the spacing between each box */
+            margin-bottom: 0; /* No margin between boxes */
             padding: 15px;
         }
 
@@ -53,16 +52,17 @@
             }
         }
 
-        /* Remove unnecessary padding/margin for rows and columns */
-        .about-page .row {
-            margin: 0;
-            padding: 0;
-        }
-
+        /* Flexbox settings for aligning the boxes */
         .equal-boxes {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between; /* Keep content boxes aligned without large gaps */
+            align-content: start;
+        }
+
+        .col-md-4 {
+            flex: 1;
+            min-width: 300px; /* Minimum width to keep them aligned properly */
+            max-width: 33.33%;
         }
     </style>
 </head>
@@ -76,7 +76,7 @@
         <nav>
             <ul class="nav nav-pills nav-stacked">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="https://rmeta.github.io/about">About</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -97,7 +97,7 @@
             <div class="col-md-4 about-me content-box">
                 <!-- Picture Above the About Me Box -->
                 <div class="about-picture">
-                    <img src="https://rmeta.github.io/resources/img/profile.jpeg" alt="About Me Picture" class="img-responsive img-thumbnail">
+                    <img src="https://rmeta.github.io/resources/img/about_picture.jpeg" alt="About Me Picture" class="img-responsive img-thumbnail">
                 </div>
                 <h2>About Me</h2>
                 <p>
@@ -141,7 +141,7 @@
                 </ul>
             </div>
 
-            <!-- Research Interests Section -->
+            <!-- Research Interests Section (Directly Under Education) -->
             <div class="col-md-4 research-interests content-box">
                 <h2>Research Interests</h2>
                 <ul>

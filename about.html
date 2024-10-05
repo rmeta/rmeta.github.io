@@ -12,15 +12,22 @@
 
     <!-- Embedded CSS for Adjustments -->
     <style>
+        /* Global Styling */
+        html {
+            height: 100%;
+            background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+            overflow: hidden;
+        }
+
         body {
-            background-color: #0d0d1a;
-            color: #ffffff;
+            color: #e0e0e0;
             font-family: 'Lato', sans-serif;
             overflow-x: hidden;
         }
 
         /* Star animation */
-        #stars, #stars2 {
+        #stars,
+        #stars2 {
             width: 1px;
             height: 1px;
             background: transparent;
@@ -38,73 +45,101 @@
             from {
                 transform: translateY(0px);
             }
+
             to {
                 transform: translateY(-2000px);
             }
         }
 
-        /* Sidebar Styling */
+        /* Sidebar Styles */
         .sidebar {
-            width: 200px;
             position: fixed;
-            top: 0;
             left: 0;
+            top: 0;
+            width: 180px;
             height: 100%;
-            background-color: #1a1a2e;
-            padding-top: 20px;
-            box-sizing: border-box;
-        }
-
-        .sidebar nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .sidebar nav ul li {
-            padding: 10px;
+            background-color: #1b1b1b;
+            color: #e0e0e0;
+            padding-top: 30px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+            font-family: 'Lato', sans-serif;
             text-align: center;
         }
 
-        .sidebar nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            display: block;
-        }
-
-        .sidebar nav ul li a:hover {
-            background-color: #575757;
-            border-radius: 5px;
+        .profile-container {
+            margin-bottom: 20px;
         }
 
         .profile-picture {
             width: 100px;
             height: 100px;
-            border-radius: 50%; /* Circle shape */
-            object-fit: cover;
-            margin: 20px auto;
-            display: block;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .sidebar nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .sidebar nav ul li {
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+
+        .sidebar nav ul li a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .sidebar nav ul li a:hover {
+            color: #c0c0c0;
+            background-color: #333;
+            padding-left: 20px;
+            transition: 0.3s;
         }
 
         .footer-text {
             position: absolute;
             bottom: 20px;
-            left: 0;
-            width: 100%;
-            color: #ffffff;
-            text-align: center;
+            left: 10px;
+            right: 10px;
             font-size: 12px;
+            color: #999;
+            text-align: center;
         }
 
         /* Main Content Styling */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
+        .about-page {
+            padding: 60px 15px;
+            margin-left: 200px;
+            color: #e0e0e0;
+            background-color: #1b1b3a;
+            min-height: 100vh;
+        }
+
+        .content-box {
+            background-color: #1b1b3a;
+            border-radius: 8px;
             padding: 20px;
-            padding-left: 220px; /* Account for sidebar */
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .download-cv-btn {
+            margin-top: 20px;
+            background-color: #3b3b3b;
+            border: none;
+        }
+
+        .download-cv-btn:hover {
+            background-color: #575757;
         }
 
         .about-picture {
-            text-align: center; /* Centers the image */
+            text-align: center;
             margin-bottom: 20px;
         }
 
@@ -112,37 +147,7 @@
             width: 100%;
             max-width: 100%;
             height: auto;
-            border-radius: 10px; /* Slightly rounded corners */
-        }
-
-        .content-box {
-            padding: 20px;
-            background-color: #1a1a2e;
             border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            margin-top: 0;
-        }
-
-        .section-title {
-            font-weight: 700;
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-        }
-
-        .btn-primary {
-            margin-top: 20px;
         }
     </style>
 </head>
@@ -155,7 +160,6 @@
     <!-- Sidebar Navigation -->
     <div class="sidebar">
         <div class="profile-container">
-            <!-- Circular profile picture -->
             <img class="profile-picture" src="https://rmeta.github.io/resources/img/profilee.jpeg" alt="Profile Picture">
         </div>
         <nav>
@@ -172,12 +176,12 @@
     </div>
 
     <!-- Main Content -->
-    <div class="container">
+    <div class="about-page">
         <!-- About Me Section -->
         <div class="content-box">
             <div class="about-picture">
-                <!-- Use a rectangular picture (as large as the container box) -->
-                <img src="https://rmeta.github.io/resources/img/profile_large.jpg" alt="About Me Picture" class="img-responsive img-thumbnail">
+                <!-- Use a rectangular picture -->
+                <img src="https://rmeta.github.io/resources/img/conference.jpeg" alt="About Me Picture" class="img-responsive img-thumbnail">
             </div>
             <h2>About Me</h2>
             <p>

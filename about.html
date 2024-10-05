@@ -28,16 +28,31 @@
         .equal-boxes {
             display: flex;
             flex-wrap: wrap;
-            align-content: start;
+            gap: 20px; /* Adds consistent spacing between boxes */
         }
 
         .content-box {
             flex: 1;
-            min-width: 300px; /* Minimum width for the boxes */
             padding: 15px;
             margin-bottom: 0;
             background-color: #1a1a2e; /* Optional: Matches the style of the existing boxes */
             box-sizing: border-box;
+        }
+
+        /* Adjusting columns for three consistent columns without empty spaces */
+        .col-md-4 {
+            flex: 1 1 calc(33.333% - 20px); /* Three columns with 20px gap */
+            max-width: calc(33.333% - 20px);
+        }
+
+        /* Profile picture in sidebar */
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px auto;
+            display: block;
         }
 
         /* Ensure all boxes have equal height */
@@ -54,7 +69,7 @@
     <!-- Sidebar Navigation -->
     <div class="sidebar">
         <div class="profile-container">
-            <img class="profile-picture" src="https://rmeta.github.io/resources/img/profile.jpeg" alt="Profile Picture">
+            <img class="profile-picture" src="https://rmeta.github.io/resources/img/profilee.jpeg" alt="Profile Picture">
         </div>
         <nav>
             <ul class="nav nav-pills nav-stacked">
@@ -121,16 +136,6 @@
                     <li>Direct MBA Admission with Full Scholarship, Sharif University of Technology (SUT), 2023</li>
                     <li>2nd Place Among Engineering Science Bachelor’s Students, University of Tehran, 2023</li>
                     <li>Ranked 3rd Among Undergraduate Student Projects, University of Tehran, 2023</li>
-                </ul>
-            </div>
-
-            <!-- Research Interests Section -->
-            <div class="col-md-4 content-box equal-height">
-                <h2>Research Interests</h2>
-                <ul>
-                    <li>Applied Machine Learning</li>
-                    <li>Empirical Research</li>
-                    <li>Game Theory</li>
                 </ul>
             </div>
         </div>

@@ -14,16 +14,70 @@
     <meta property="og:url" content="https://armitatehranchi.info/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Armita Tehranchi</title>
+    <style>
+        /* Inline styling to replicate the existing CSS file */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 250px;
+            background: #2C3E50;
+            padding: 20px;
+            color: #FFFFFF;
+            overflow-y: auto;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        .sidebar h2 {
+            color: #FFFFFF;
+        }
+
+        .content {
+            margin-left: 270px; /* Adjusted to give space for sidebar */
+            padding: 20px;
+        }
+
+        .sidebar a {
+            color: #3498DB;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
     <div id="stars"></div>
     <div id="stars2"></div>
 
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Armita Tehranchi</h2>
+        <p>Master's Student in Operational Analytics</p>
+        <a href="#about-me">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#honors">Honors & Awards</a>
+        <a href="./resources/CV.pdf" download>Download CV</a>
+        <hr>
+        <p>Contact</p>
+        <p>Email: <a href="mailto:armitat@mail.ubc.ca">armitat@mail.ubc.ca</a></p>
+        <p>Phone: <a href="tel:+12508992876">+1 (250) 899-2876</a></p>
+        <p>
+            <a class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/armita-tehranchi/"></a>
+            <a class="fa fa-github" target="_blank" href="https://github.com/rmeta"></a>
+        </p>
+    </div>
+
     <!-- Main Content -->
-    <div class="about-page container">
+    <div class="content">
         <!-- About Me Section with Image and Text Side by Side -->
-        <div class="row" style="background: #2C3E50; padding: 20px; border-radius: 10px; margin-bottom: 20px; color: #FFFFFF;">
+        <div id="about-me" class="row" style="background: #2C3E50; padding: 20px; border-radius: 10px; margin-bottom: 20px; color: #FFFFFF;">
             <div class="col-md-4">
                 <img class="about-me-picture img-responsive" src="./resources/img/profilee.jpeg" alt="Profile Picture" style="border-radius: 10px;">
             </div>
@@ -48,7 +102,7 @@
         <!-- Education and Honors Sections Side by Side -->
         <div class="row">
             <!-- Education Section -->
-            <div class="col-md-6" style="background: #2C3E50; padding: 20px; border-radius: 10px; color: #FFFFFF; margin-bottom: 20px;">
+            <div id="education" class="col-md-6" style="background: #2C3E50; padding: 20px; border-radius: 10px; color: #FFFFFF; margin-bottom: 20px;">
                 <h2>Education</h2>
                 <ul>
                     <li>
@@ -69,7 +123,7 @@
             </div>
 
             <!-- Honors & Awards Section -->
-            <div class="col-md-6" style="background: #2C3E50; padding: 20px; border-radius: 10px; color: #FFFFFF; margin-bottom: 20px;">
+            <div id="honors" class="col-md-6" style="background: #2C3E50; padding: 20px; border-radius: 10px; color: #FFFFFF; margin-bottom: 20px;">
                 <h2>Honors and Awards</h2>
                 <ul>
                     <li>The OR Diploma awarded by the Canadian Operational Research Society (CORS), 2024</li>

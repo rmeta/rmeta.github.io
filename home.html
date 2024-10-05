@@ -1,88 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>About - Armita Tehranchi</title>
+    <title>Armita Tehranchi - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #444;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 1.5em;
+            border-bottom: 2px solid #444;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
-
 <body>
-    <!-- Sidebar Navigation -->
-    <div class="sidebar">
-        <div class="profile-container">
-            <img class="profile-picture" src="./resources/img/profilee.jpeg" alt="Profile Picture">
-        </div>
-        <nav>
-            <ul class="nav nav-pills nav-stacked">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="footer-text">
-            <p>Copyright ©2024 All rights reserved | Template by Armita Tehranchi</p>
-        </div>
-    </div>
 
-    <!-- Background Stars -->
-    <div id="stars"></div>
-    <div id="stars2"></div>
+    <header>
+        <h1>Armita Tehranchi</h1>
+        <p>Kelowna, BC, Canada</p>
+        <p>Email: armita.tehranchi@example.com | LinkedIn: <a href="https://linkedin.com/in/armitatehranchi" target="_blank">linkedin.com/in/armitatehranchi</a></p>
+    </header>
 
-    <!-- Main Content -->
-    <div class="container-fluid about-page">
-        <div class="row equal-boxes">
-            <!-- About Me Section -->
-            <div class="col-md-4 about-me content-box">
-                <h2>About Me</h2>
-                <p>
-                    I’m Armita Tehranchi, a master's student in Operational Analytics under the supervision of 
-                    Dr. Amir Ardestani at the University of British Columbia. I’m passionate about exploring sustainable fashion and analyzing how consumer behavior impacts sustainability.
-                </p>
-                <a href="./resources/CV.pdf" class="btn btn-primary download-cv-btn">
-                    <i class="fa fa-download"></i> Download CV
-                </a>
-            </div>
+    <section class="section">
+        <div class="section-title">Summary</div>
+        <p>Independent, motivated sustainability master's student at UBCO with experience in consumer behavior research, sustainability initiatives, and collaboration with industry leaders like lululemon. Passionate about making a societal impact through research and innovation in sustainable practices.</p>
+    </section>
 
-            <!-- Education Section -->
-            <div class="col-md-4 education content-box">
-                <h2>Education</h2>
-                <div class="education-item">
-                    <h3><i class="fa fa-graduation-cap"></i> University of British Columbia (UBC)</h3>
-                    <p><strong>M.Sc. in Operational Analytics</strong></p>
-                    <p>Sep 2023 – Present</p>
-                </div>
-                <div class="education-item">
-                    <h3><i class="fa fa-graduation-cap"></i> University of Tehran (UT)</h3>
-                    <p><strong>B.Sc. in Engineering Science (Computer sub-field)</strong></p>
-                    <p>Sep 2019 – Aug 2023</p>
-                </div>
-            </div>
+    <section class="section">
+        <div class="section-title">Education</div>
+        <ul>
+            <li>
+                <strong>Master of Science in Sustainability</strong><br>
+                University of British Columbia Okanagan, Kelowna, BC<br>
+                Expected Graduation: 2025
+            </li>
+            <li>
+                <strong>Bachelor of Science in Environmental Studies</strong><br>
+                University of Tehran, Tehran, Iran<br>
+                Graduated: 2022
+            </li>
+        </ul>
+    </section>
 
-            <!-- Honors & Awards Section -->
-            <div class="col-md-4 honors-awards content-box">
-                <h2>Honors and Awards</h2>
-                <ul>
-                    <li>The OR Diploma awarded by the Canadian Operational Research Society (CORS), 2024</li>
-                    <li>Research Team Visit (1,000 CAD), Lululemon, 2024</li>
-                    <li>Graduate Student Funding to Attend CORS 2024 (300 CAD), CORS, 2024</li>
-                    <li>Conference Presentation (1,000 CAD), UBC, 2024</li>
-                    <li>Fully funded graduate student in UBC (66,000 CAD), UBC, 2023 and 2024</li>
-                    <li>IGS Master’s Entrance Award (10,000 CAD), UBC, 2023 and 2024</li>
-                    <li>Global arrival scholarship (2800 CAD), Homa Scholarship, 2023</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <section class="section">
+        <div class="section-title">Work Experience</div>
+        <ul>
+            <li>
+                <strong>Research Assistant - lululemon</strong><br>
+                Jan 2023 - Present<br>
+                Conducted research on consumer sustainable behavior among Generation Z, analyzing data and generating actionable insights to support sustainability initiatives.
+            </li>
+            <li>
+                <strong>Teaching Assistant - MGMT 355 & MGMT 441</strong><br>
+                Sep 2022 - Dec 2023<br>
+                Assisted in teaching undergraduate management courses, facilitated group discussions, and provided feedback on assignments.
+            </li>
+        </ul>
+    </section>
 
-    <!-- External Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <section class="section">
+        <div class="section-title">Projects</div>
+        <ul>
+            <li>
+                <strong>Sustainable Fashion Research</strong><br>
+                Presented findings on sustainability in fashion at #CORS2024 and at lululemon headquarters in Vancouver. Focused on Generation Z's perception and behavioral trends towards sustainable fashion.
+            </li>
+            <li>
+                <strong>Applications of Operations Research in Wildfire Management</strong><br>
+                Created a presentation outlining the use of operations research techniques to improve wildfire response and resource allocation.
+            </li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <div class="section-title">Skills</div>
+        <ul>
+            <li>Data Analysis: Python, R, Excel</li>
+            <li>Research & Survey Design: Qualtrics, SPSS</li>
+            <li>Communication & Presentation: Public speaking, academic writing</li>
+            <li>Project Management: Collaboration, deadline management, leadership</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <div class="section-title">Certifications</div>
+        <ul>
+            <li>IELTS - Score: 6.5</li>
+            <li>Certificate in Data Analysis - Coursera</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <div class="section-title">Interests</div>
+        <ul>
+            <li>Puzzles and problem-solving</li>
+            <li>Playing the piano</li>
+            <li>Advocating for sustainability and green initiatives</li>
+        </ul>
+    </section>
+
 </body>
-
 </html>

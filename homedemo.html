@@ -2,112 +2,80 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Research and Presentations - Armita Tehranchi</title>
+    <link rel="stylesheet" href="Normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Armita Tehranchi" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:image" content="./resources/img/profilee.jpeg" />
+    <meta property="og:url" content="https://armitatehranchi.info/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <!-- Embedded CSS for Adjustments -->
-    <style>
-        body {
-            background-color: #0d0d1a;
-            color: #ffffff;
-            font-family: 'Lato', sans-serif;
-            overflow-x: hidden;
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171984209-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
         }
+        gtag('js', new Date());
 
-        /* Stars Background */
-        #stars, #stars2 {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            top: 0;
-            left: 0;
-        }
+        gtag('config', 'UA-171984209-1');
+    </script>
 
-        #stars {
-            background: url('https://rmeta.github.io/resources/img/stars.png') repeat;
-            animation: stars 50s linear infinite;
-        }
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KVVG5F5');
+    </script>
+    <!-- End Google Tag Manager -->
 
-        #stars2 {
-            background: url('https://rmeta.github.io/resources/img/stars2.png') repeat;
-            animation: stars2 100s linear infinite;
-        }
+    <title>Armita Tehranchi</title>
+</head>
 
-        @keyframes stars {
-            from {
-                background-position: 0 0;
-            }
-            to {
-                background-position: 10000px 5000px;
-            }
-        }
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVVG5F5" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-        @keyframes stars2 {
-            from {
-                background-position: 0 0;
-            }
-            to {
-                background-position: 5000px 10000px;
-            }
-        }
+    <!-- Sidebar Navigation -->
+<div class="sidebar">
+    <div class="profile-container">
+        <img class="profile-picture" src="./resources/img/profilee.jpeg" alt="Profile Picture">
+    </div>
+    <nav>
+        <ul class="nav nav-pills nav-stacked">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="footer-text">
+        <p>This template is made with ❤️ by Armita Tehranchi</p>
+    </div>
+</div>
 
-        /* Sidebar Styling */
-        .sidebar {
-            width: 200px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100%;
-            background-color: #1a1a2e;
-            padding-top: 20px;
-            box-sizing: border-box;
-        }
 
-        .sidebar nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .sidebar nav ul li {
-            padding: 10px;
-            text-align: center;
-        }
-
-        .sidebar nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            display: block;
-        }
-
-        .sidebar nav ul li a:hover {
-            background-color: #575757;
-            border-radius: 5px;
-        }
-
-        .profile-picture {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 20px auto;
-            display: block;
-        }
-
-        .footer-text {
-            position: absolute;
-            bottom: 20px;
-            left: 0;
-            width: 100%;
-            color: #ffffff;
-            text-align: center;
-            font-size: 12px;
-        }
-
+    <div id="stars"></div>
+    <div id="stars2"></div>
         /* Main Content Styling */
         .container {
             max-width: 1200px;

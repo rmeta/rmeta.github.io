@@ -17,15 +17,17 @@
         <style>
         /* Sidebar Styling */
             .sidebar {
-        width: 200px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        background-color: rgba(26, 26, 46, 0.8); /* This adds transparency to the sidebar */
-        padding-top: 20px;
-        box-sizing: border-box;
-    }
+                        width: 200px;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        background-color: rgba(26, 26, 46, 0.8); /* Semi-transparent background */
+                        padding-top: 20px;
+                        box-sizing: border-box;
+                        z-index: 1000; /* Ensures the sidebar stays on top */
+                    }
+
 
 
         .sidebar nav ul {

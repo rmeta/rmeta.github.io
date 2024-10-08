@@ -5,62 +5,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="Normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Linking to your custom style.css for stars background -->
     <meta charset="UTF-8">
     <meta property="og:title" content="Armita Tehranchi" />
     <meta property="og:type" content="profile" />
     <meta property="og:image" content="./resources/img/profilee.jpeg" />
     <meta property="og:url" content="https://armitatehranchi.info/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Armita Tehranchi - About Me</title>
+    <title>Armita Tehranchi</title>
 
     <style>
-        body {
-            background-color: #0d0d1a;
-            color: #ffffff;
-            font-family: 'Lato', sans-serif;
-            overflow-x: hidden;
-        }
-
-        /* Stars Background */
-        #stars, #stars2 {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            top: 0;
-            left: 0;
-        }
-
-        #stars {
-            background: url('https://rmeta.github.io/resources/img/stars.png') repeat;
-            animation: stars 50s linear infinite;
-        }
-
-        #stars2 {
-            background: url('https://rmeta.github.io/resources/img/stars2.png') repeat;
-            animation: stars2 100s linear infinite;
-        }
-
-        @keyframes stars {
-            from {
-                background-position: 0 0;
-            }
-            to {
-                background-position: 10000px 5000px;
-            }
-        }
-
-        @keyframes stars2 {
-            from {
-                background-position: 0 0;
-            }
-            to {
-                background-position: 5000px 10000px;
-            }
-        }
-
         /* Sidebar Styling */
         .sidebar {
             width: 200px;
@@ -129,9 +83,37 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
 
-        .content-box h2 {
-            text-align: center;
-            color: #ffcc00;
+        .col-md-6 {
+            background-color: #1a1a2e;
+            padding: 20px;
+            border-radius: 10px;
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .about-me-picture {
+            border-radius: 10px;
+        }
+
+        /* Ensuring the boxes have the same height */
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .row > .col-md-6 {
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .row > .col-md-6:first-child {
+            margin-left: 0;
+        }
+
+        .row > .col-md-6:last-child {
+            margin-right: 0;
         }
 
         h2, h3 {
@@ -159,7 +141,7 @@
 </head>
 
 <body>
-    <!-- Sidebar Navigation -->
+    <!-- Sidebar -->
     <div class="sidebar">
         <div class="profile-container">
             <img class="profile-picture" src="./resources/img/profilee.jpeg" alt="Profile Picture">
@@ -177,34 +159,64 @@
         </div>
     </div>
 
-    <!-- Stars Background -->
+    <!-- Starry Background -->
     <div id="stars"></div>
     <div id="stars2"></div>
 
     <!-- Main Content -->
     <div class="container">
-        <!-- About Me Section -->
-        <div id="about-me" class="content-box">
-            <h2>About Me</h2>
-            <p>
-                I’m Armita Tehranchi, a master's student in Operational Analytics under the supervision of 
-                <a class="link" target="_blank" href="https://scholar.google.com/citations?hl=en&user=-f4bTPsAAAAJ" style="color: #3498DB;">Dr. Amir Ardestani</a> at the 
-                <a class="link" target="_blank" href="https://www.ubc.ca/" style="color: #3498DB;">University of British Columbia</a>. 
-                My research spans consumer behavior, machine learning, collaborative consumption, and remanufacturing. 
-                I enjoy discovering new possibilities and solving creative problems.
-            </p>
-            <p>
-                I’ve collaborated with <a class="link" target="_blank" href="https://shop.lululemon.com/" style="color: #3498DB;">Lululemon</a> to explore younger generations' perception of sustainable fashion. 
-                Besides academic pursuits, I enjoy solving <a class="link" target="_blank" href="https://rmeta.github.io/puzzle" style="color: #3498DB;">puzzles</a>, 
-                <a class="link" target="_blank" href="https://youtu.be/2c34LzHuICo" style="color: #3498DB;">playing the piano</a>, and student community leadership.
-            </p>
-            <a class="btn btn-primary" href="./resources/CV.pdf" download style="margin-top: 15px;">Download CV</a>
+        <!-- About Me Section with Image and Text Side by Side -->
+        <div id="about-me" class="content-box row" style="margin-bottom: 20px;">
+            <div class="col-md-4">
+                <img class="about-me-picture img-responsive" src="./resources/img/profilee.jpeg" alt="Profile Picture">
+            </div>
+            <div class="col-md-8">
+                <h2>About Me</h2>
+                <p>
+                    I’m Armita Tehranchi, a master's student in Operational Analytics under the supervision of 
+                    <a class="link" target="_blank" href="https://scholar.google.com/citations?hl=en&user=-f4bTPsAAAAJ" style="color: #3498DB;">Dr. Amir Ardestani</a> at the 
+                    <a class="link" target="_blank" href="https://www.ubc.ca/" style="color: #3498DB;">University of British Columbia</a>. 
+                    My research spans consumer behavior, machine learning, collaborative consumption, and remanufacturing. 
+                    I enjoy discovering new possibilities and solving creative problems.
+                </p>
+                <p>
+                    I’ve collaborated with <a class="link" target="_blank" href="https://shop.lululemon.com/" style="color: #3498DB;">Lululemon</a> to explore younger generations' perception of sustainable fashion. 
+                    Besides academic pursuits, I enjoy solving <a class="link" target="_blank" href="https://rmeta.github.io/puzzle" style="color: #3498DB;">puzzles</a>, 
+                    <a class="link" target="_blank" href="https://youtu.be/2c34LzHuICo" style="color: #3498DB;">playing the piano</a>, and student community leadership.
+                </p>
+                <a class="btn btn-primary" href="./resources/CV.pdf" download style="margin-top: 15px;">Download CV</a>
+            </div>
         </div>
-    </div>
 
-    <!-- External Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</body>
+        <!-- Education and Honors Sections Side by Side -->
+        <div class="row">
+            <!-- Education Section -->
+            <div id="education" class="col-md-6">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>Master of Science in Sustainability</strong><br>University of British Columbia, BC, Canada</li>
+                    <li><strong>Bachelor of Science in Environmental Studies</strong><br>University of Tehran, Tehran, Iran</li>
+                </ul>
+                <h3>Research Interests</h3>
+                <ul>
+                    <li>Consumer Behavior in Sustainable Fashion</li>
+                    <li>Machine Learning for Predictive Analysis</li>
+                    <li>Remanufacturing and Circular Economy</li>
+                </ul>
+            </div>
 
-</html>
+            <!-- Honors & Awards Section -->
+            <div id="honors" class="col-md-6">
+                <h2>Honors and Awards</h2>
+                <ul>
+                    <li>The OR Diploma awarded by the Canadian Operational Research Society (CORS), 2024</li>
+                    <li>Research Team Visit (1,000 CAD), Lululemon, 2024</li>
+                    <li>Graduate Student Funding to Attend CORS 2024 (300 CAD), CORS, 2024</li>
+                    <li>Conference Presentation (1,000 CAD), UBC, 2024</li>
+                    <li>Fully funded graduate student at UBC (66,000 CAD), 2023 and 2024</li>
+                    <li>IGS Master’s Entrance Award (10,000 CAD), 2023 and 2024</li>
+                    <li>Global arrival scholarship (2,800 CAD), Homa Scholarship, 2023</li>
+                    <li>IGS Travel Award (500 CAD), UBC, 2023</li>
+                </ul>
+            </div>
+        </div>

@@ -13,16 +13,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Armita Tehranchi</title>
     
-    <style>
+     <style>
         /* Sidebar Styling */
         .sidebar {
-            width: 200px;
+            width: 250px;
             position: fixed;
             top: 0;
             left: 0;
             height: 100%;
-            background-color: #1a1a2e; /* Dark background */
-            padding-top: 20px;
+            background-color: rgba(26, 26, 46, 0.9); /* Darker background */
+            padding-top: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
             box-sizing: border-box;
             z-index: 1000;
             color: #ffffff; /* Text color */
@@ -34,28 +36,32 @@
         }
 
         .sidebar nav ul li {
-            padding: 10px;
-            text-align: center;
+            padding: 15px;
+            text-align: left; /* Left-align the text */
         }
 
         .sidebar nav ul li a {
             color: #ffffff; /* White text */
             text-decoration: none;
             display: block;
+            font-size: 1.2em;
         }
 
         .sidebar nav ul li a:hover {
             background-color: #575757; /* Hover effect */
             border-radius: 5px;
+            padding-left: 10px; /* Adds a sliding feel */
+            transition: 0.3s ease;
         }
 
         .profile-picture {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
-            margin: 20px auto;
+            margin: 0 auto 20px auto; /* Center the profile picture */
             display: block;
+            border: 2px solid #ffcc00; /* Optional border for emphasis */
         }
 
         .footer-text {
@@ -73,22 +79,23 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
-            padding-left: 220px; /* Account for sidebar */
+            padding-left: 300px; /* Account for wider sidebar */
         }
 
         .content-box {
             padding: 30px;
-            background-color: rgba(26, 26, 46, 0.8); /* Adjust opacity for the content boxes */
+            background-color: rgba(26, 26, 46, 0.5); /* Transparent background */
             border-radius: 15px;
             margin-bottom: 40px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Deeper shadow */
+            backdrop-filter: blur(5px); /* Adds a glass effect */
         }
 
         .col-md-6 {
-            background-color: rgba(26, 26, 46, 0.8); /* Adjust opacity for transparency */
+            background-color: rgba(26, 26, 46, 0.5); /* Transparent background */
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -121,6 +128,7 @@
         p, ul {
             font-size: 1em;
             line-height: 1.5;
+            color: #ffffff;
         }
 
         /* Contact Icons Styling */
@@ -153,6 +161,7 @@
         a:hover {
             text-decoration: underline;
         }
+
     </style>
 </head>
 <body>
@@ -173,6 +182,7 @@
             <p>This template is made with ❤️ by Armita Tehranchi</p>
         </div>
     </div>
+
  <div id="stars"></div>
  <div id="stars2"></div>
 

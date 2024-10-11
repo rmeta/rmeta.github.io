@@ -123,11 +123,29 @@
         a:hover {
             text-decoration: underline;
         }
+#about-me {
+    display: flex;
+    align-items: center; /* Aligns the image and text vertically */
+    justify-content: space-between;
+}
 
-        img.about-me-picture {
-            width: 100%;
-            border-radius: 15px;
-        }
+.about-me-picture {
+    max-width: 100%; /* Ensures the image is responsive */
+    border-radius: 15px;
+    margin-right: 20px; /* Adds space between the image and the text */
+}
+
+@media (max-width: 768px) {
+    #about-me {
+        flex-direction: column; /* Stacks image and text on small screens */
+        text-align: center;
+    }
+
+    .about-me-picture {
+        margin: 0 auto 20px; /* Centers the image on smaller screens */
+    }
+}
+
     </style>
 </head>
 

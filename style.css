@@ -297,7 +297,12 @@ html, body {
     padding: 0;
 }
 
-/* Media Query for Mobile Phones */
+/* General Box-Sizing Rule */
+* {
+    box-sizing: border-box;
+}
+
+/* Media Query for Tablets and Smaller Devices */
 @media (max-width: 768px) {
 
     /* Sidebar adjustments */
@@ -333,32 +338,35 @@ html, body {
 
     /* Main content adjustments */
     .about-page {
-        margin-left: 0; /* Remove space reserved for sidebar */
-        padding: 20px 10px;
+        margin-left: 0; /* Remove sidebar space on mobile */
+        padding: 10px;  /* Reduce padding */
     }
 
     .content-box {
         margin-bottom: 15px;
         padding: 15px;
+        width: 100%; /* Ensure content doesn't overflow */
     }
 
-    /* Make sections stack vertically */
+    /* Stack equal-boxes vertically */
     .equal-boxes {
         flex-direction: column;
     }
 
-    /* Adjust font sizes for better readability */
+    /* Reduce font sizes for readability on smaller screens */
     h1, h3 {
-        font-size: 5vmin;
+        font-size: 4.5vmin;
     }
 
     p {
-        font-size: 3.5vmin;
+        font-size: 3vmin;
+        padding-left: 5vw;
+        padding-right: 5vw; /* Reduce padding to prevent overflow */
     }
 
     .profile {
-        width: 25vmin;
-        height: 25vmin;
+        width: 20vmin;
+        height: 20vmin;
     }
 
     .button-row {
@@ -369,27 +377,23 @@ html, body {
         padding: 7px;
     }
 
-    .color-btn {
-        right: 5px;
-        top: 5px;
-    }
-
     /* Footer */
     .footer-text {
         font-size: 10px;
     }
-
 }
 
 /* Media Query for very small mobile screens */
 @media (max-width: 480px) {
-    /* Further reduce font size for small screens */
+    
     h1 {
-        font-size: 4vmin;
+        font-size: 4vmin; /* Further reduce font size */
     }
 
     p {
-        font-size: 3vmin;
+        font-size: 2.8vmin;
+        padding-left: 3vw;
+        padding-right: 3vw; /* Ensure no overflow */
     }
 
     .profile-picture {
@@ -397,7 +401,7 @@ html, body {
         height: 60px;
     }
 
-    /* Stack menu items vertically for small screens */
+    /* Stack menu items vertically */
     .sidebar nav ul {
         flex-direction: column;
         padding-left: 0;
@@ -408,9 +412,18 @@ html, body {
         font-size: 12px; /* Reduce font size */
     }
 
-    /* Adjust footer for small screens */
+    /* Footer adjustments */
     .footer-text {
         font-size: 8px;
     }
 }
 
+/* Ensure that the body and html fill the viewport */
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 16px;
+}

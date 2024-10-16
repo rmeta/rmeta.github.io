@@ -296,3 +296,121 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+/* Media Query for Mobile Phones */
+@media (max-width: 768px) {
+
+    /* Sidebar adjustments */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+        padding: 10px 0;
+    }
+
+    .sidebar nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .sidebar nav ul li {
+        padding: 8px;
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .profile-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile-picture {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Main content adjustments */
+    .about-page {
+        margin-left: 0; /* Remove space reserved for sidebar */
+        padding: 20px 10px;
+    }
+
+    .content-box {
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+
+    /* Make sections stack vertically */
+    .equal-boxes {
+        flex-direction: column;
+    }
+
+    /* Adjust font sizes for better readability */
+    h1, h3 {
+        font-size: 5vmin;
+    }
+
+    p {
+        font-size: 3.5vmin;
+    }
+
+    .profile {
+        width: 25vmin;
+        height: 25vmin;
+    }
+
+    .button-row {
+        margin-top: 1em;
+    }
+
+    .contact-btn {
+        padding: 7px;
+    }
+
+    .color-btn {
+        right: 5px;
+        top: 5px;
+    }
+
+    /* Footer */
+    .footer-text {
+        font-size: 10px;
+    }
+
+}
+
+/* Media Query for very small mobile screens */
+@media (max-width: 480px) {
+    /* Further reduce font size for small screens */
+    h1 {
+        font-size: 4vmin;
+    }
+
+    p {
+        font-size: 3vmin;
+    }
+
+    .profile-picture {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Stack menu items vertically for small screens */
+    .sidebar nav ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .sidebar nav ul li {
+        padding: 6px;
+        font-size: 12px; /* Reduce font size */
+    }
+
+    /* Adjust footer for small screens */
+    .footer-text {
+        font-size: 8px;
+    }
+}
+

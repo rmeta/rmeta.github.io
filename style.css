@@ -406,6 +406,111 @@ p {
     margin-top: 20px;
 }
 
+//* General Box-Sizing Rule */
+* {
+    box-sizing: border-box;
+}
+
+/* Reset some default margins */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    line-height: 1.5;
+}
+
+/* Main container for page */
+.about-page {
+    margin: 0;
+    padding: 20px;
+    background-color: #1b1b3a;
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding-top: 70px; /* Space for the top nav bar */
+    max-width: 100%; /* Ensure content fits within viewport */
+}
+
+/* Top Navigation Bar */
+.sidebar {
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b1b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 0;
+}
+
+/* Navigation Items */
+.sidebar nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    padding: 0;
+    font-size: 14px;
+}
+
+.sidebar nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 10px;
+    display: inline-block;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #333;
+    color: #c0c0c0;
+    transition: background-color 0.3s;
+}
+
+/* Content Box Styles */
+.content-box {
+    background-color: #1b1b3a;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 100%; /* Prevents content overflow */
+}
+
+/* Responsive Typography */
+h1, h3 {
+    font-size: 4vmin; /* Make the text scalable */
+    margin: 0; /* Remove extra margins to fit better */
+}
+
+p {
+    font-size: 3vmin;
+    padding-left: 5vw;
+    padding-right: 5vw; /* Ensure no overflow */
+    word-wrap: break-word; /* Prevent words from spilling out */
+    max-width: 100%; /* Ensure paragraphs fit in the viewport */
+}
+
+/* Footer */
+.footer-text {
+    font-size: 10px;
+    text-align: center;
+    color: #999;
+    margin-top: 20px;
+}
+
 /* Media Query for Tablets and Smaller Devices */
 @media (max-width: 768px) {
     /* Adjust font sizes for smaller screens */
@@ -416,20 +521,21 @@ p {
     p {
         font-size: 3vmin;
         padding-left: 3vw;
-        padding-right: 3vw; /* Ensure no overflow */
+        padding-right: 3vw;
     }
 
     .content-box {
         padding: 15px;
         margin-bottom: 10px;
+        max-width: 100%; /* Ensure content fits the screen */
     }
 }
 
 /* Media Query for very small mobile screens */
 @media (max-width: 480px) {
-
+    /* Further reduce font size */
     h1, h3 {
-        font-size: 4vmin; /* Further reduce font size */
+        font-size: 4vmin;
     }
 
     p {
@@ -442,3 +548,4 @@ p {
         font-size: 8px;
     }
 }
+

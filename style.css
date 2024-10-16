@@ -297,133 +297,148 @@ html, body {
     padding: 0;
 }
 
+
 /* General Box-Sizing Rule */
 * {
     box-sizing: border-box;
 }
 
+/* Reset some default margins */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+
+/* Main container for page */
+.about-page {
+    margin: 0;
+    padding: 20px;
+    background-color: #1b1b3a;
+    color: #e0e0e0;
+    min-height: 100vh;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 100%; /* Make the sidebar a top bar */
+    height: 50px; /* Reduce height for top navigation */
+    background-color: #1b1b1b;
+    position: fixed; /* Fixed at the top */
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around; /* Center the menu items horizontally */
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 0;
+}
+
+/* Remove the profile picture for mobile */
+.profile-container {
+    display: none;
+}
+
+.sidebar nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    padding: 0;
+    font-size: 14px;
+}
+
+.sidebar nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 10px;
+    display: inline-block;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #333;
+    color: #c0c0c0;
+    transition: background-color 0.3s;
+}
+
+/* Adjust page content */
+.about-page {
+    padding-top: 70px; /* Add space for the fixed top bar */
+}
+
+/* Content Box Styles */
+.content-box {
+    background-color: #1b1b3a;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Ensure content spans full width */
+}
+
+/* Responsive Typography */
+h1, h3 {
+    font-size: 4vmin; /* Make the text scalable */
+}
+
+p {
+    font-size: 3vmin;
+    padding-left: 5vw;
+    padding-right: 5vw; /* Ensure no overflow */
+}
+
+/* Footer */
+.footer-text {
+    font-size: 10px;
+    text-align: center;
+    color: #999;
+    margin-top: 20px;
+}
+
 /* Media Query for Tablets and Smaller Devices */
 @media (max-width: 768px) {
-
-    /* Sidebar adjustments */
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        box-shadow: none;
-        padding: 10px 0;
-    }
-
-    .sidebar nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        text-align: center;
-    }
-
-    .sidebar nav ul li {
-        padding: 8px;
-        font-size: 14px; /* Reduce font size */
-    }
-
-    .profile-container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .profile-picture {
-        width: 80px;
-        height: 80px;
-    }
-
-    /* Main content adjustments */
-    .about-page {
-        margin-left: 0; /* Remove sidebar space on mobile */
-        padding: 10px;  /* Reduce padding */
-    }
-
-    .content-box {
-        margin-bottom: 15px;
-        padding: 15px;
-        width: 100%; /* Ensure content doesn't overflow */
-    }
-
-    /* Stack equal-boxes vertically */
-    .equal-boxes {
-        flex-direction: column;
-    }
-
-    /* Reduce font sizes for readability on smaller screens */
+    /* Adjust font sizes for smaller screens */
     h1, h3 {
-        font-size: 4.5vmin;
+        font-size: 5vmin;
     }
 
     p {
         font-size: 3vmin;
-        padding-left: 5vw;
-        padding-right: 5vw; /* Reduce padding to prevent overflow */
+        padding-left: 3vw;
+        padding-right: 3vw; /* Ensure no overflow */
     }
 
-    .profile {
-        width: 20vmin;
-        height: 20vmin;
-    }
-
-    .button-row {
-        margin-top: 1em;
-    }
-
-    .contact-btn {
-        padding: 7px;
-    }
-
-    /* Footer */
-    .footer-text {
-        font-size: 10px;
+    .content-box {
+        padding: 15px;
+        margin-bottom: 10px;
     }
 }
 
 /* Media Query for very small mobile screens */
 @media (max-width: 480px) {
-    
-    h1 {
+
+    h1, h3 {
         font-size: 4vmin; /* Further reduce font size */
     }
 
     p {
         font-size: 2.8vmin;
         padding-left: 3vw;
-        padding-right: 3vw; /* Ensure no overflow */
+        padding-right: 3vw;
     }
 
-    .profile-picture {
-        width: 60px;
-        height: 60px;
-    }
-
-    /* Stack menu items vertically */
-    .sidebar nav ul {
-        flex-direction: column;
-        padding-left: 0;
-    }
-
-    .sidebar nav ul li {
-        padding: 6px;
-        font-size: 12px; /* Reduce font size */
-    }
-
-    /* Footer adjustments */
     .footer-text {
         font-size: 8px;
     }
-}
-
-/* Ensure that the body and html fill the viewport */
-body, html {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-size: 16px;
 }
